@@ -1,0 +1,84 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      target: deps  # Use deps stage for development
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
+    command: npm run dev
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - clientops-network
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - MYSQL_DATABASE=${MYSQL_DATABASE:-clientops_db}
+      - MYSQL_USER=${MYSQL_USER:-clientops_user}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD:-secure_password}
+      - DATABASE_URL=${DATABASE_URL:-mysql+pymysql://clientops_user:secure_password@mysql:3306/clientops_db}
+      - SESSION_SECRET_KEY=${SESSION_SECRET_KEY:-your-secret-key-here}
+      - SESSION_EXPIRE_MINUTES=${SESSION_EXPIRE_MINUTES:-1440}
+      - FRONTEND_URL=${FRONTEND_URL:-http://localhost:3000}
+    volumes:
+      - ./backend:/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - clientops-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/api/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  mysql:
+    image: mysql:8.0
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-root_password}
+      - MYSQL_DATABASE=${MYSQL_DATABASE:-clientops_db}
+      - MYSQL_USER=${MYSQL_USER:-clientops_user}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD:-secure_password}
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./backend/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    networks:
+      - clientops-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${MYSQL_ROOT_PASSWORD:-root_password}"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+volumes:
+  mysql_data:
+    driver: local
+
+networks:
+  clientops-network:
+    driver: bridge
