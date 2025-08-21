@@ -30132,3 +30132,580 @@ Traceback (most recent call last):
     version = _bcrypt.__about__.__version__
               ^^^^^^^^^^^^^^^^^
 AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 15:59:55,364 - app.main - INFO - ClientOps API starting up
+2025-08-21 15:59:55,365 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 15:59:55,622 - app.core.middleware - INFO - Incoming request
+2025-08-21 15:59:55,667 - app.core.exception_handlers - WARNING - HTTP exception: 400
+2025-08-21 15:59:55,668 - app.core.middleware - INFO - Request completed
+2025-08-21 15:59:55,668 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/ "HTTP/1.1 400 Bad Request"
+2025-08-21 15:59:55,763 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:00:13,590 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:00:13,590 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 16:00:13,843 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:00:13,867 - app.core.exception_handlers - WARNING - HTTP exception: 400
+2025-08-21 16:00:13,867 - app.core.middleware - INFO - Request completed
+2025-08-21 16:00:13,868 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/ "HTTP/1.1 400 Bad Request"
+2025-08-21 16:00:13,965 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:01:15,026 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:01:15,027 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 16:01:15,286 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:01:15,316 - app.core.middleware - INFO - Request completed
+2025-08-21 16:01:15,317 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/ "HTTP/1.1 201 Created"
+2025-08-21 16:01:15,318 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:01:21,357 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:01:21,358 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 16:01:21,616 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:01:21,645 - app.core.middleware - INFO - Request completed
+2025-08-21 16:01:21,646 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/ "HTTP/1.1 201 Created"
+2025-08-21 16:01:21,647 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:01:21,839 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:01:22,053 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:01:22,059 - app.core.exception_handlers - WARNING - HTTP exception: 409
+2025-08-21 16:01:22,059 - app.core.middleware - INFO - Request completed
+2025-08-21 16:01:22,060 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/ "HTTP/1.1 409 Conflict"
+2025-08-21 16:01:22,151 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:01:22,338 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:01:22,551 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:01:22,555 - app.core.exception_handlers - WARNING - Validation error
+2025-08-21 16:01:22,555 - app.core.middleware - INFO - Request completed
+2025-08-21 16:01:22,555 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/ "HTTP/1.1 422 Unprocessable Entity"
+2025-08-21 16:01:22,556 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:01:22,744 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:01:22,958 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:01:22,966 - app.core.middleware - INFO - Request completed
+2025-08-21 16:01:22,967 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/1 "HTTP/1.1 200 OK"
+2025-08-21 16:01:22,968 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:01:23,156 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:01:23,364 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:01:23,368 - app.core.exception_handlers - WARNING - HTTP exception: 404
+2025-08-21 16:01:23,368 - app.core.middleware - INFO - Request completed
+2025-08-21 16:01:23,369 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/99999 "HTTP/1.1 404 Not Found"
+2025-08-21 16:01:23,374 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:01:23,561 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:01:23,776 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:01:23,789 - app.core.middleware - INFO - Request completed
+2025-08-21 16:01:23,790 - httpx - INFO - HTTP Request: PUT http://testserver/api/clients/1 "HTTP/1.1 200 OK"
+2025-08-21 16:01:23,791 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:01:23,993 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:01:24,201 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:01:24,206 - app.core.exception_handlers - WARNING - HTTP exception: 409
+2025-08-21 16:01:24,206 - app.core.middleware - INFO - Request completed
+2025-08-21 16:01:24,207 - httpx - INFO - HTTP Request: PUT http://testserver/api/clients/2 "HTTP/1.1 409 Conflict"
+2025-08-21 16:01:24,208 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:01:24,394 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:01:24,603 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:01:24,619 - app.core.middleware - INFO - Request completed
+2025-08-21 16:01:24,620 - httpx - INFO - HTTP Request: DELETE http://testserver/api/clients/1 "HTTP/1.1 200 OK"
+2025-08-21 16:01:24,621 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:01:24,805 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:01:25,016 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:01:25,021 - app.core.exception_handlers - WARNING - HTTP exception: 404
+2025-08-21 16:01:25,021 - app.core.middleware - INFO - Request completed
+2025-08-21 16:01:25,022 - httpx - INFO - HTTP Request: DELETE http://testserver/api/clients/99999 "HTTP/1.1 404 Not Found"
+2025-08-21 16:01:25,022 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:01:49,554 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:01:49,555 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 16:01:49,811 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:01:49,832 - app.core.exception_handlers - WARNING - HTTP exception: 409
+2025-08-21 16:01:49,832 - app.core.middleware - INFO - Request completed
+2025-08-21 16:01:49,833 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/ "HTTP/1.1 409 Conflict"
+2025-08-21 16:01:49,942 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:22,093 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:22,094 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 16:02:22,350 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:22,370 - app.core.exception_handlers - WARNING - HTTP exception: 409
+2025-08-21 16:02:22,371 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:22,371 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/ "HTTP/1.1 409 Conflict"
+2025-08-21 16:02:22,372 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:22,589 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:22,798 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:22,806 - app.core.exception_handlers - WARNING - HTTP exception: 404
+2025-08-21 16:02:22,806 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:22,807 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/99999 "HTTP/1.1 404 Not Found"
+2025-08-21 16:02:22,809 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:30,345 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:30,346 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 16:02:30,604 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:30,646 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:30,647 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/ "HTTP/1.1 201 Created"
+2025-08-21 16:02:30,648 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:30,845 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:31,054 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:31,060 - app.core.exception_handlers - WARNING - HTTP exception: 409
+2025-08-21 16:02:31,060 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:31,060 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/ "HTTP/1.1 409 Conflict"
+2025-08-21 16:02:31,061 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:31,248 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:31,464 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:31,469 - app.core.exception_handlers - WARNING - Validation error
+2025-08-21 16:02:31,469 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:31,470 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/ "HTTP/1.1 422 Unprocessable Entity"
+2025-08-21 16:02:31,471 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:31,663 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:31,876 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:31,885 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:31,886 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/1 "HTTP/1.1 200 OK"
+2025-08-21 16:02:31,887 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:32,075 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:32,283 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:32,289 - app.core.exception_handlers - WARNING - HTTP exception: 404
+2025-08-21 16:02:32,290 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:32,291 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/99999 "HTTP/1.1 404 Not Found"
+2025-08-21 16:02:32,292 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:32,480 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:32,697 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:32,710 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:32,711 - httpx - INFO - HTTP Request: PUT http://testserver/api/clients/1 "HTTP/1.1 200 OK"
+2025-08-21 16:02:32,712 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:32,916 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:33,131 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:33,136 - app.core.exception_handlers - WARNING - HTTP exception: 409
+2025-08-21 16:02:33,137 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:33,137 - httpx - INFO - HTTP Request: PUT http://testserver/api/clients/2 "HTTP/1.1 409 Conflict"
+2025-08-21 16:02:33,138 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:33,324 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:33,536 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:33,552 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:33,552 - httpx - INFO - HTTP Request: DELETE http://testserver/api/clients/1 "HTTP/1.1 200 OK"
+2025-08-21 16:02:33,553 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:33,770 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:33,972 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:33,977 - app.core.exception_handlers - WARNING - HTTP exception: 404
+2025-08-21 16:02:33,977 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:33,978 - httpx - INFO - HTTP Request: DELETE http://testserver/api/clients/99999 "HTTP/1.1 404 Not Found"
+2025-08-21 16:02:33,978 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:34,165 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:34,377 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:34,385 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:34,385 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/ "HTTP/1.1 200 OK"
+2025-08-21 16:02:34,386 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:34,573 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:34,785 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:34,794 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:34,794 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/?search=Acme "HTTP/1.1 200 OK"
+2025-08-21 16:02:34,796 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:34,983 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:35,195 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:35,203 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:35,204 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/?status=active "HTTP/1.1 200 OK"
+2025-08-21 16:02:35,205 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:35,390 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:35,605 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:35,612 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:35,613 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/?relation_type=Customer "HTTP/1.1 200 OK"
+2025-08-21 16:02:35,614 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:35,798 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:36,011 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:36,016 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:36,017 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/?page=1&page_size=10 "HTTP/1.1 200 OK"
+2025-08-21 16:02:36,018 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:36,201 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:36,413 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:36,419 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:36,420 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/?sort_by=name&sort_order=asc "HTTP/1.1 200 OK"
+2025-08-21 16:02:36,420 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:36,426 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:36,426 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/?sort_by=name&sort_order=desc "HTTP/1.1 200 OK"
+2025-08-21 16:02:36,427 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:36,616 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:36,829 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:36,844 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:36,845 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/1/contacts "HTTP/1.1 201 Created"
+2025-08-21 16:02:36,846 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:37,040 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:37,254 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:37,259 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:37,260 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/1/contacts "HTTP/1.1 200 OK"
+2025-08-21 16:02:37,261 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:37,452 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:37,660 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:37,679 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:37,680 - httpx - INFO - HTTP Request: PUT http://testserver/api/clients/1/contacts/1 "HTTP/1.1 200 OK"
+2025-08-21 16:02:37,681 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:37,862 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:38,068 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:38,076 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:38,076 - httpx - INFO - HTTP Request: DELETE http://testserver/api/clients/1/contacts/1 "HTTP/1.1 204 No Content"
+2025-08-21 16:02:38,077 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:38,258 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:38,471 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:38,480 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:38,481 - httpx - INFO - HTTP Request: PUT http://testserver/api/clients/1 "HTTP/1.1 200 OK"
+2025-08-21 16:02:38,481 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:38,486 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:38,486 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/1/history "HTTP/1.1 200 OK"
+2025-08-21 16:02:38,487 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:38,670 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:38,889 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:38,930 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:38,930 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/1/activate "HTTP/1.1 404 Not Found"
+2025-08-21 16:02:39,035 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:39,224 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:39,434 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:39,438 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:39,438 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/1/deactivate "HTTP/1.1 404 Not Found"
+2025-08-21 16:02:39,444 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:39,627 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:39,628 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:39,629 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 16:02:39,629 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:39,630 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/ "HTTP/1.1 401 Unauthorized"
+2025-08-21 16:02:39,630 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:39,810 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:40,019 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:40,024 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:40,025 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/ "HTTP/1.1 200 OK"
+2025-08-21 16:02:40,026 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:40,211 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:40,421 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:40,427 - app.core.exception_handlers - WARNING - Validation error
+2025-08-21 16:02:40,427 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:40,428 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/1/contacts "HTTP/1.1 422 Unprocessable Entity"
+2025-08-21 16:02:40,429 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:40,625 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:40,830 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:40,835 - app.core.exception_handlers - WARNING - Validation error
+2025-08-21 16:02:40,835 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:40,836 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/1/contacts "HTTP/1.1 422 Unprocessable Entity"
+2025-08-21 16:02:40,836 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:41,021 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:41,232 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:41,237 - app.core.exception_handlers - WARNING - Validation error
+2025-08-21 16:02:41,237 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:41,237 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/ "HTTP/1.1 422 Unprocessable Entity"
+2025-08-21 16:02:41,239 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:41,433 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:41,635 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:41,640 - app.core.exception_handlers - WARNING - Validation error
+2025-08-21 16:02:41,640 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:41,640 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/?page=-1 "HTTP/1.1 422 Unprocessable Entity"
+2025-08-21 16:02:41,641 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:41,644 - app.core.exception_handlers - WARNING - Validation error
+2025-08-21 16:02:41,645 - app.core.middleware - INFO - Request completed
+2025-08-21 16:02:41,645 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/?page_size=101 "HTTP/1.1 422 Unprocessable Entity"
+2025-08-21 16:02:41,646 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:02:41,829 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:02:42,038 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:02:42,043 - app.core.middleware - ERROR - Request failed
+2025-08-21 16:02:42,129 - app.core.exception_handlers - ERROR - Unhandled exception
+2025-08-21 16:02:42,565 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:05:07,484 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:05:07,484 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 16:05:07,738 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:05:07,760 - app.core.middleware - ERROR - Request failed
+2025-08-21 16:05:07,768 - app.core.exception_handlers - ERROR - Unhandled exception
+2025-08-21 16:05:08,056 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:05:41,540 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:05:41,540 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 16:05:41,798 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:05:41,819 - app.core.middleware - ERROR - Request failed
+2025-08-21 16:05:41,826 - app.core.exception_handlers - ERROR - Unhandled exception
+2025-08-21 16:05:42,109 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:07,098 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:07,098 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 16:06:07,359 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:07,381 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:07,382 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/1/activate "HTTP/1.1 200 OK"
+2025-08-21 16:06:07,384 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:07,577 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:07,781 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:07,791 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:07,792 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/1/deactivate "HTTP/1.1 200 OK"
+2025-08-21 16:06:07,793 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:14,503 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:14,504 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 16:06:14,753 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:14,782 - app.core.middleware - ERROR - Request failed
+2025-08-21 16:06:14,789 - app.core.exception_handlers - ERROR - Unhandled exception
+2025-08-21 16:06:14,791 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:14,794 - app.core.middleware - ERROR - Request failed
+2025-08-21 16:06:14,799 - app.core.exception_handlers - ERROR - Unhandled exception
+2025-08-21 16:06:15,093 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:32,507 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:32,507 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 16:06:32,763 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:32,789 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:32,790 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/ "HTTP/1.1 201 Created"
+2025-08-21 16:06:32,791 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:32,994 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:33,206 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:33,212 - app.core.exception_handlers - WARNING - HTTP exception: 409
+2025-08-21 16:06:33,213 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:33,213 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/ "HTTP/1.1 409 Conflict"
+2025-08-21 16:06:33,214 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:33,402 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:33,619 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:33,624 - app.core.exception_handlers - WARNING - Validation error
+2025-08-21 16:06:33,624 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:33,625 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/ "HTTP/1.1 422 Unprocessable Entity"
+2025-08-21 16:06:33,626 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:33,815 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:34,025 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:34,066 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:34,067 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/1 "HTTP/1.1 200 OK"
+2025-08-21 16:06:34,068 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:34,257 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:34,466 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:34,471 - app.core.exception_handlers - WARNING - HTTP exception: 404
+2025-08-21 16:06:34,471 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:34,472 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/99999 "HTTP/1.1 404 Not Found"
+2025-08-21 16:06:34,473 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:34,661 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:34,871 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:34,883 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:34,884 - httpx - INFO - HTTP Request: PUT http://testserver/api/clients/1 "HTTP/1.1 200 OK"
+2025-08-21 16:06:34,885 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:35,079 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:35,288 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:35,293 - app.core.exception_handlers - WARNING - HTTP exception: 409
+2025-08-21 16:06:35,293 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:35,294 - httpx - INFO - HTTP Request: PUT http://testserver/api/clients/2 "HTTP/1.1 409 Conflict"
+2025-08-21 16:06:35,295 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:35,479 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:35,692 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:35,707 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:35,708 - httpx - INFO - HTTP Request: DELETE http://testserver/api/clients/1 "HTTP/1.1 200 OK"
+2025-08-21 16:06:35,709 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:35,894 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:36,107 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:36,112 - app.core.exception_handlers - WARNING - HTTP exception: 404
+2025-08-21 16:06:36,112 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:36,112 - httpx - INFO - HTTP Request: DELETE http://testserver/api/clients/99999 "HTTP/1.1 404 Not Found"
+2025-08-21 16:06:36,113 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:36,298 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:36,506 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:36,515 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:36,515 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/ "HTTP/1.1 200 OK"
+2025-08-21 16:06:36,516 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:36,701 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:36,910 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:36,919 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:36,919 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/?search=Acme "HTTP/1.1 200 OK"
+2025-08-21 16:06:36,920 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:37,105 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:37,315 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:37,324 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:37,324 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/?status=active "HTTP/1.1 200 OK"
+2025-08-21 16:06:37,325 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:37,513 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:37,720 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:37,728 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:37,728 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/?relation_type=Customer "HTTP/1.1 200 OK"
+2025-08-21 16:06:37,729 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:37,912 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:38,122 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:38,127 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:38,128 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/?page=1&page_size=10 "HTTP/1.1 200 OK"
+2025-08-21 16:06:38,129 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:38,313 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:38,522 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:38,528 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:38,528 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/?sort_by=name&sort_order=asc "HTTP/1.1 200 OK"
+2025-08-21 16:06:38,529 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:38,535 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:38,536 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/?sort_by=name&sort_order=desc "HTTP/1.1 200 OK"
+2025-08-21 16:06:38,537 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:38,746 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:38,959 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:38,976 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:38,976 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/1/contacts "HTTP/1.1 201 Created"
+2025-08-21 16:06:38,978 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:39,161 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:39,372 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:39,377 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:39,378 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/1/contacts "HTTP/1.1 200 OK"
+2025-08-21 16:06:39,379 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:39,561 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:39,773 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:39,784 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:39,785 - httpx - INFO - HTTP Request: PUT http://testserver/api/clients/1/contacts/1 "HTTP/1.1 200 OK"
+2025-08-21 16:06:39,786 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:39,975 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:40,192 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:40,199 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:40,200 - httpx - INFO - HTTP Request: DELETE http://testserver/api/clients/1/contacts/1 "HTTP/1.1 204 No Content"
+2025-08-21 16:06:40,201 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:40,388 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:40,594 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:40,603 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:40,604 - httpx - INFO - HTTP Request: PUT http://testserver/api/clients/1 "HTTP/1.1 200 OK"
+2025-08-21 16:06:40,605 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:40,609 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:40,610 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/1/history "HTTP/1.1 200 OK"
+2025-08-21 16:06:40,611 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:40,799 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:41,001 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:41,010 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:41,010 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/1/activate "HTTP/1.1 200 OK"
+2025-08-21 16:06:41,011 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:41,192 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:41,410 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:41,418 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:41,419 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/1/deactivate "HTTP/1.1 200 OK"
+2025-08-21 16:06:41,420 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:41,604 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:41,605 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:41,606 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 16:06:41,606 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:41,607 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/ "HTTP/1.1 401 Unauthorized"
+2025-08-21 16:06:41,608 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:41,795 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:41,999 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:42,005 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:42,005 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/ "HTTP/1.1 200 OK"
+2025-08-21 16:06:42,006 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:42,203 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:42,415 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:42,423 - app.core.exception_handlers - WARNING - Validation error
+2025-08-21 16:06:42,424 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:42,424 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/1/contacts "HTTP/1.1 422 Unprocessable Entity"
+2025-08-21 16:06:42,425 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:42,613 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:42,822 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:42,827 - app.core.exception_handlers - WARNING - Validation error
+2025-08-21 16:06:42,827 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:42,827 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/1/contacts "HTTP/1.1 422 Unprocessable Entity"
+2025-08-21 16:06:42,828 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:43,014 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:43,227 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:43,231 - app.core.exception_handlers - WARNING - Validation error
+2025-08-21 16:06:43,231 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:43,232 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/ "HTTP/1.1 422 Unprocessable Entity"
+2025-08-21 16:06:43,233 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:43,421 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:43,625 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:43,629 - app.core.exception_handlers - WARNING - Validation error
+2025-08-21 16:06:43,630 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:43,630 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/?page=-1 "HTTP/1.1 422 Unprocessable Entity"
+2025-08-21 16:06:43,631 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:43,633 - app.core.exception_handlers - WARNING - Validation error
+2025-08-21 16:06:43,634 - app.core.middleware - INFO - Request completed
+2025-08-21 16:06:43,634 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/?page_size=101 "HTTP/1.1 422 Unprocessable Entity"
+2025-08-21 16:06:43,635 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:43,822 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:06:44,026 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:44,031 - app.core.middleware - ERROR - Request failed
+2025-08-21 16:06:44,039 - app.core.exception_handlers - ERROR - Unhandled exception
+2025-08-21 16:06:44,040 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:06:44,044 - app.core.middleware - ERROR - Request failed
+2025-08-21 16:06:44,048 - app.core.exception_handlers - ERROR - Unhandled exception
+2025-08-21 16:06:44,049 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:06:50,269 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 16:07:18,850 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 16:07:26,606 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 16:08:52,861 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:08:52,862 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 16:08:53,128 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:08:53,156 - app.core.middleware - INFO - Request completed
+2025-08-21 16:08:53,156 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/ "HTTP/1.1 201 Created"
+2025-08-21 16:08:53,158 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:08:53,360 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:08:53,574 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:08:53,580 - app.core.exception_handlers - WARNING - HTTP exception: 409
+2025-08-21 16:08:53,581 - app.core.middleware - INFO - Request completed
+2025-08-21 16:08:53,581 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/ "HTTP/1.1 409 Conflict"
+2025-08-21 16:08:53,582 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:08:53,767 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:08:53,980 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:08:53,984 - app.core.exception_handlers - WARNING - Validation error
+2025-08-21 16:08:53,985 - app.core.middleware - INFO - Request completed
+2025-08-21 16:08:53,985 - httpx - INFO - HTTP Request: POST http://testserver/api/clients/ "HTTP/1.1 422 Unprocessable Entity"
+2025-08-21 16:08:53,986 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:08:54,185 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:08:54,398 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:08:54,405 - app.core.middleware - INFO - Request completed
+2025-08-21 16:08:54,406 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/1 "HTTP/1.1 200 OK"
+2025-08-21 16:08:54,407 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:08:54,613 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:08:54,822 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:08:54,826 - app.core.exception_handlers - WARNING - HTTP exception: 404
+2025-08-21 16:08:54,826 - app.core.middleware - INFO - Request completed
+2025-08-21 16:08:54,827 - httpx - INFO - HTTP Request: GET http://testserver/api/clients/99999 "HTTP/1.1 404 Not Found"
+2025-08-21 16:08:54,828 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:08:55,022 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:08:55,231 - app.core.middleware - INFO - Incoming request
+2025-08-21 16:08:55,244 - app.core.middleware - INFO - Request completed
+2025-08-21 16:08:55,244 - httpx - INFO - HTTP Request: PUT http://testserver/api/clients/1 "HTTP/1.1 200 OK"
+2025-08-21 16:08:55,245 - app.main - INFO - ClientOps API shutting down
+2025-08-21 16:08:55,428 - app.main - INFO - ClientOps API starting up
+2025-08-21 16:08:56,152 - app.main - INFO - ClientOps API shutting down
