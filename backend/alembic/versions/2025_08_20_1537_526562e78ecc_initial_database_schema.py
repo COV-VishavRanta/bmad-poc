@@ -49,7 +49,6 @@ def upgrade() -> None:
         sa.Column('user_agent', sa.String(500), nullable=True),
         sa.Column('created_at', sa.DateTime(), nullable=False, server_default=sa.func.current_timestamp()),
         sa.Column('updated_at', sa.DateTime(), nullable=False, server_default=sa.func.current_timestamp()),
-        sa.Column('id', sa.Integer(), autoincrement=True, nullable=False),
         sa.ForeignKeyConstraint(['user_id'], ['users.id'], ondelete='CASCADE'),
         sa.PrimaryKeyConstraint('session_id')
     )

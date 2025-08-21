@@ -6,13 +6,13 @@ and user session management.
 """
 
 import enum
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import List, Optional
 
 from sqlalchemy import Column, DateTime, Enum, ForeignKey, Index, Integer, String, func
 from sqlalchemy.orm import relationship
 
-from app.models.base import BaseModel
+from app.models.base import BaseModel, Base
 
 
 class UserRole(enum.Enum):
@@ -112,17 +112,19 @@ class User(BaseModel):
         self.last_login = func.current_timestamp()
 
 
-class UserSession(BaseModel):
+class UserSession(Base):
     """
     User session model for authentication tracking.
 
     Tracks active user sessions with expiration and metadata.
+    Note: This model does not inherit from BaseModel because it uses
+    session_id as the primary key instead of auto-incrementing id.
     """
 
     __tablename__ = "user_sessions"
 
-    # Session identification
-    session_id = Column(String(255), primary_key=True)
+    # Session identification - session_id is the primary key
+    session_id = Column(String(255), primary_key=True, autoincrement=False)
     user_id = Column(Integer, ForeignKey("users.id"), nullable=False, index=True)
 
     # Session lifecycle
@@ -132,6 +134,22 @@ class UserSession(BaseModel):
     # Session metadata
     ip_address = Column(String(45), nullable=True)  # Supports IPv6
     user_agent = Column(String(500), nullable=True)
+
+    # Timestamp fields (manually added since not inheriting from BaseModel)
+    created_at = Column(
+        DateTime,
+        nullable=False,
+        default=func.current_timestamp(),
+        server_default=func.current_timestamp(),
+    )
+
+    updated_at = Column(
+        DateTime,
+        nullable=False,
+        default=func.current_timestamp(),
+        onupdate=func.current_timestamp(),
+        server_default=func.current_timestamp(),
+    )
 
     # Relationships
     user = relationship("User", back_populates="sessions")
@@ -148,7 +166,11 @@ class UserSession(BaseModel):
 
     def is_expired(self) -> bool:
         """Check if session is expired."""
-        return datetime.utcnow() > self.expires_at
+        current_time = datetime.now(timezone.utc)
+        # Handle both timezone-aware and naive datetimes for compatibility
+        if self.expires_at.tzinfo is None:
+            current_time = current_time.replace(tzinfo=None)
+        return current_time > self.expires_at
 
     def is_valid(self) -> bool:
         """Check if session is valid (not expired)."""
@@ -158,5 +180,5 @@ class UserSession(BaseModel):
         """Extend session expiration by specified hours."""
         from datetime import timedelta
 
-        self.expires_at = datetime.utcnow() + timedelta(hours=hours)
+        self.expires_at = datetime.now(timezone.utc) + timedelta(hours=hours)
         self.last_accessed = func.current_timestamp()

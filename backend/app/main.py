@@ -4,7 +4,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api import health
+from app.api import health, auth
 from app.core import (
     CORSLoggingMiddleware,
     LoggingMiddleware,
@@ -13,6 +13,7 @@ from app.core import (
     register_exception_handlers,
     setup_logging,
 )
+from app.middleware import AuthenticationMiddleware
 
 # Set up logging before creating the app
 setup_logging()
@@ -46,6 +47,7 @@ app = FastAPI(
 register_exception_handlers(app)
 
 # Add custom middleware (order matters!)
+app.add_middleware(AuthenticationMiddleware)
 app.add_middleware(SecurityHeadersMiddleware)
 app.add_middleware(LoggingMiddleware, skip_paths=["/docs", "/redoc", "/openapi.json", "/"])
 app.add_middleware(CORSLoggingMiddleware)
@@ -64,6 +66,7 @@ app.add_middleware(
 
 # Include routers
 app.include_router(health.router, prefix="/api", tags=["health"])
+app.include_router(auth.router, tags=["auth"])
 
 
 @app.get("/")
