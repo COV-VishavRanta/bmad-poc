@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import ErrorBoundary from '../components/ErrorBoundary'
+import { ToastProvider } from '../components/ui/ToastProvider'
+import { AuthProvider } from '../lib/auth'
 import { ThemeProvider } from '../theme/ThemeProvider'
 import './globals.css'
 
@@ -23,7 +25,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
         <ThemeProvider>
-          <ErrorBoundary>{children}</ErrorBoundary>
+          <ToastProvider>
+            <AuthProvider>
+              <ErrorBoundary>{children}</ErrorBoundary>
+            </AuthProvider>
+          </ToastProvider>
         </ThemeProvider>
       </body>
     </html>
