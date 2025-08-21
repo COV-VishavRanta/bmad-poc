@@ -23,8 +23,84 @@ services:
       retries: 5
       start_period: 30s
 
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      target: development
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=mysql+pymysql://clientops_user:secure_password@mysql:3306/clientops_db
+      - ENVIRONMENT=development
+      - LOG_LEVEL=debug
+    volumes:
+      # Hot reload volume mounts
+      - ./backend/app:/app/app:cached
+      - ./backend/alembic:/app/alembic:cached
+      - ./backend/requirements.txt:/app/requirements.txt:ro
+      - ./backend/alembic.ini:/app/alembic.ini:ro
+      # Exclude node_modules-like directories
+      - /app/app/__pycache__
+      - backend_cache:/app/.cache
+    networks:
+      - clientops-network
+    depends_on:
+      - mysql
+    restart: unless-stopped
+    command: uvicorn app.main:app --reload --host 0.0.0.0 --port 8000 --reload-dir app --reload-delay 0.25
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      target: development
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - NEXT_TELEMETRY_DISABLED=1
+      - TURBOPACK=1
+    volumes:
+      # Hot reload volume mounts
+      - ./frontend/src:/app/src:cached
+      - ./frontend/public:/app/public:cached
+      - ./frontend/package.json:/app/package.json:ro
+      - ./frontend/package-lock.json:/app/package-lock.json:ro
+      - ./frontend/next.config.ts:/app/next.config.ts:ro
+      - ./frontend/tsconfig.json:/app/tsconfig.json:ro
+      - ./frontend/tailwind.config.ts:/app/tailwind.config.ts:ro
+      - ./frontend/postcss.config.mjs:/app/postcss.config.mjs:ro
+      - ./frontend/eslint.config.mjs:/app/eslint.config.mjs:ro
+      # Exclude node_modules and build artifacts
+      - /app/node_modules
+      - /app/.next
+      - frontend_cache:/app/.next/cache
+    networks:
+      - clientops-network
+    depends_on:
+      - backend
+    restart: unless-stopped
+    command: npm run dev
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
 volumes:
   mysql_data:
+    driver: local
+  backend_cache:
+    driver: local
+  frontend_cache:
     driver: local
 
 networks:

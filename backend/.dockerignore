@@ -1,11 +1,30 @@
-__pycache__
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
 *.pyc
 *.pyo
 *.pyd
 .Python
-env
-pip-log.txt
-pip-delete-this-directory.txt
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing / coverage
 .tox
 .coverage
 .coverage.*
@@ -14,7 +33,6 @@ nosetests.xml
 coverage.xml
 *.cover
 *.log
-.git
 .mypy_cache
 .pytest_cache
 .hypothesis
@@ -51,3 +69,36 @@ Thumbs.db
 # Database
 *.db
 *.sqlite
+*.sqlite3
+
+# Git
+.git
+.gitignore
+
+# Documentation
+README.md
+docs/
+
+# Docker files
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Logs directory (keep structure, exclude content)
+logs/*.log
+
+# Backup files
+*.bak
+*.backup
+
+# Temporary files
+*.tmp
+*.temp
+
+# FastAPI specific
+.fastapi_cache/
+
+# Development tools config (keep in image)
+# .flake8
+# pyproject.toml
+# alembic.ini

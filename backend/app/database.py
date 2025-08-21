@@ -5,13 +5,16 @@ This module provides SQLAlchemy configuration, connection pooling, and session
 management for the FastAPI application with MySQL backend.
 """
 
+import logging
 import os
 from typing import Generator
-from sqlalchemy import create_engine, text
-from sqlalchemy.orm import sessionmaker, Session
-from sqlalchemy.pool import QueuePool
+
 from dotenv import load_dotenv
-import logging
+from sqlalchemy import create_engine, text
+from sqlalchemy.orm import Session, sessionmaker
+from sqlalchemy.pool import QueuePool
+
+from app.models.base import Base
 
 # Load environment variables
 load_dotenv()
@@ -55,25 +58,18 @@ engine = create_engine(
 )
 
 # Session factory configuration
-SessionLocal = sessionmaker(
-    autocommit=False,
-    autoflush=False,
-    bind=engine
-)
-
-# Import the base model - will be used by alembic and models
-from app.models.base import Base
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 
 def get_db() -> Generator[Session, None, None]:
     """
     Database dependency for FastAPI routes.
-    
+
     Provides a database session for each request and ensures proper cleanup.
-    
+
     Yields:
         Session: SQLAlchemy database session
-        
+
     Example:
         @app.get("/users/")
         def get_users(db: Session = Depends(get_db)):
@@ -93,7 +89,7 @@ def get_db() -> Generator[Session, None, None]:
 def check_database_connection() -> bool:
     """
     Check if database connection is working.
-    
+
     Returns:
         bool: True if connection is successful, False otherwise
     """
@@ -110,7 +106,7 @@ def check_database_connection() -> bool:
 def get_database_info() -> dict:
     """
     Get database connection information (non-sensitive).
-    
+
     Returns:
         dict: Database connection details
     """
@@ -121,14 +117,14 @@ def get_database_info() -> dict:
         "pool_size": DB_POOL_SIZE,
         "max_overflow": DB_MAX_OVERFLOW,
         "pool_recycle": DB_POOL_RECYCLE,
-        "pool_timeout": DB_POOL_TIMEOUT
+        "pool_timeout": DB_POOL_TIMEOUT,
     }
 
 
 def create_tables():
     """
     Create all tables defined in models.
-    
+
     This function should be called after all models are imported.
     Typically used during application startup or migrations.
     """
@@ -143,7 +139,7 @@ def create_tables():
 def drop_tables():
     """
     Drop all tables defined in models.
-    
+
     WARNING: This will delete all data. Use with caution.
     Typically used only in development/testing environments.
     """

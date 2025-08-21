@@ -7,13 +7,14 @@ model creation, and basic CRUD operations.
 
 import pytest
 from sqlalchemy import text
-from app.database import SessionLocal, engine, check_database_connection
+
+from app.database import SessionLocal, check_database_connection, engine
 from app.models import User, UserRole, UserStatus
 
 
 def test_database_connection():
     """Test basic database connectivity."""
-    assert check_database_connection() == True
+    assert check_database_connection() is True
 
 
 def test_database_session():
@@ -35,35 +36,35 @@ def test_user_model_creation():
         password_hash="test_hash",
         full_name="Test User",
         role=UserRole.HR,
-        status=UserStatus.ACTIVE
+        status=UserStatus.ACTIVE,
     )
-    
+
     assert user.email == "test@example.com"
     assert user.role == UserRole.HR
-    assert user.is_active() == True
-    assert user.has_role(UserRole.HR) == True
-    assert user.has_role(UserRole.PC) == False
+    assert user.is_active() is True
+    assert user.has_role(UserRole.HR) is True
+    assert user.has_role(UserRole.PC) is False
 
 
 if __name__ == "__main__":
     print("Running database connectivity tests...")
-    
+
     try:
         test_database_connection()
         print("✓ Database connection test passed")
     except Exception as e:
         print(f"✗ Database connection test failed: {e}")
-    
+
     try:
         test_database_session()
         print("✓ Database session test passed")
     except Exception as e:
         print(f"✗ Database session test failed: {e}")
-    
+
     try:
         test_user_model_creation()
         print("✓ User model test passed")
     except Exception as e:
         print(f"✗ User model test failed: {e}")
-    
+
     print("Tests completed!")
