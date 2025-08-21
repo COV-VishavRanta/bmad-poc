@@ -1,4 +1,3 @@
-import { UserRole } from '@/types/auth';
 import { NextRequest, NextResponse } from 'next/server';
 
 // Protected routes configuration
@@ -15,21 +14,6 @@ const PROTECTED_ROUTES = [
   '/profile',
   '/settings',
 ];
-
-// Role-based route access configuration
-const ROLE_ROUTES: Record<string, UserRole[]> = {
-  '/users': ['HR'],
-  '/clients': ['HR', 'PC'],
-  '/projects': ['HR', 'PC'],
-  '/sows': ['HR', 'PC'],
-  '/assignments': ['HR', 'RM'],
-  '/timelines': ['HR', 'RM'],
-  '/teams': ['HR', 'RM'],
-  '/reports': ['HR', 'PC', 'RM'],
-  '/dashboard': ['HR', 'PC', 'RM'],
-  '/profile': ['HR', 'PC', 'RM'],
-  '/settings': ['HR'],
-};
 
 // Public routes that don't require authentication
 const PUBLIC_ROUTES = [
@@ -48,41 +32,6 @@ function isPublicRoute(pathname: string): boolean {
   return PUBLIC_ROUTES.some(route => 
     pathname === route || pathname.startsWith(`${route}/`)
   );
-}
-
-function getUserRoleFromToken(token: string | undefined): UserRole | null {
-  if (!token) return null;
-  
-  try {
-    // In a real implementation, you would decode and verify the JWT token
-    // For now, we'll assume the session cookie contains role information
-    // This would be handled by your backend authentication system
-    
-    // Placeholder implementation - in real app, decode JWT or make API call
-    // const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    // return decoded.role;
-    
-    return null; // Will rely on client-side auth state for now
-  } catch {
-    return null;
-  }
-}
-
-function hasRouteAccess(pathname: string, userRole: UserRole | null): boolean {
-  if (!userRole) return false;
-  
-  // Find the most specific route match
-  const routeKey = Object.keys(ROLE_ROUTES).find(route => 
-    pathname === route || pathname.startsWith(`${route}/`)
-  );
-  
-  if (!routeKey) {
-    // If no specific route config, allow access to authenticated users
-    return true;
-  }
-  
-  const allowedRoles = ROLE_ROUTES[routeKey];
-  return allowedRoles.includes(userRole);
 }
 
 export function middleware(request: NextRequest) {
@@ -114,14 +63,8 @@ export function middleware(request: NextRequest) {
       return NextResponse.redirect(loginUrl);
     }
     
-    // For now, we'll let the client-side handle role-based access
-    // In a production app, you'd verify the token here and check roles
-    const userRole = getUserRoleFromToken(token);
-    
-    // If we can determine the role from the token, check access
-    if (userRole && !hasRouteAccess(pathname, userRole)) {
-      return NextResponse.redirect(new URL('/unauthorized', request.url));
-    }
+    // If there's a session cookie, let the client-side handle validation
+    // The AuthProvider will validate the session and redirect if invalid
   }
   
   // Redirect root to dashboard for authenticated users

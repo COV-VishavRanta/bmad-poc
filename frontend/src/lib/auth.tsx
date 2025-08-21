@@ -2,7 +2,7 @@
 
 import { useAuthStore } from '@/store/auth';
 import { AuthStore } from '@/types/auth';
-import { createContext, ReactNode, useContext, useEffect } from 'react';
+import { createContext, ReactNode, useContext, useEffect, useRef } from 'react';
 
 const AuthContext = createContext<AuthStore | null>(null);
 
@@ -12,22 +12,43 @@ interface AuthProviderProps {
 
 export function AuthProvider({ children }: AuthProviderProps) {
   const authStore = useAuthStore();
+  const { user, isLoading, isAuthenticated } = authStore;
+  const isInitialized = useRef(false);
 
   // Initialize authentication state on app load
   useEffect(() => {
     const initializeAuth = async () => {
-      if (authStore.isAuthenticated && !authStore.user) {
+      // Prevent multiple initializations
+      if (isInitialized.current) {
+        return;
+      }
+      
+      isInitialized.current = true;
+      
+      // Only try to restore session if:
+      // 1. We have a session cookie
+      // 2. We're not already authenticated
+      // 3. We're not currently loading
+      // 4. We don't already have user data
+      const hasCookie = document.cookie.includes('clientops_session=');
+      
+      if (hasCookie && !isAuthenticated && !isLoading && !user) {
         try {
+          // Try to restore session from server
           await authStore.refreshSession();
         } catch {
-          // If refresh fails, user needs to log in again
-          await authStore.logout();
+          // If refresh fails, silently fail (don't logout as user might be on login page)
+          console.debug('Session restoration failed - user needs to login');
         }
       }
     };
 
-    initializeAuth();
-  }, [authStore]);
+    // Only run after a short delay to ensure DOM is ready and avoid race conditions
+    const timeoutId = setTimeout(initializeAuth, 100);
+    
+    return () => clearTimeout(timeoutId);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); // Intentionally empty - only run once on mount
 
   // Auto-refresh session before expiry
   useEffect(() => {

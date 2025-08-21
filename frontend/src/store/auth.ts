@@ -1,7 +1,7 @@
 import { authApi, AuthApiError } from '@/lib/api/auth';
 import { AuthStore, LoginCredentials, UserRole } from '@/types/auth';
 import { create } from 'zustand';
-import { devtools } from 'zustand/middleware';
+import { devtools, persist } from 'zustand/middleware';
 
 // Permission mappings for each role
 const ROLE_PERMISSIONS = {
@@ -30,113 +30,120 @@ const ROLE_PERMISSIONS = {
 
 export const useAuthStore = create<AuthStore>()(
   devtools(
-    (set, get) => ({
-      // State
-      user: null,
-      isLoading: false,
-      isAuthenticated: false,
-      error: null,
+    persist(
+      (set, get) => ({
+        // State
+        user: null,
+        isLoading: false,
+        isAuthenticated: false,
+        error: null,
 
-      // Actions
-      login: async (credentials: LoginCredentials) => {
-        set({ isLoading: true, error: null });
-        
-        try {
-          const response = await authApi.login(credentials);
-          set({ 
-            user: response.user,
-            isAuthenticated: true,
-            isLoading: false,
-            error: null
-          });
-        } catch (error) {
-          const authError = error instanceof AuthApiError 
-            ? { message: error.message, code: error.code, field: error.field }
-            : { message: 'Login failed. Please try again.' };
+        // Actions
+        login: async (credentials: LoginCredentials) => {
+          set({ isLoading: true, error: null });
           
-          set({ 
-            isLoading: false, 
-            error: authError,
-            isAuthenticated: false,
-            user: null
-          });
-          throw error;
+          try {
+            const response = await authApi.login(credentials);
+            set({ 
+              user: response.user,
+              isAuthenticated: true,
+              isLoading: false,
+              error: null
+            });
+          } catch (error) {
+            const authError = error instanceof AuthApiError 
+              ? { message: error.message, code: error.code, field: error.field }
+              : { message: 'Login failed. Please try again.' };
+            
+            set({ 
+              isLoading: false, 
+              error: authError,
+              isAuthenticated: false,
+              user: null
+            });
+            throw error;
+          }
+        },
+
+        logout: async () => {
+          set({ isLoading: true });
+          
+          try {
+            await authApi.logout();
+          } catch {
+            console.warn('Logout API call failed, clearing local state anyway');
+          } finally {
+            set({ 
+              user: null,
+              isAuthenticated: false,
+              isLoading: false,
+              error: null
+            });
+          }
+        },
+
+        refreshSession: async () => {
+          set({ isLoading: true });
+          
+          try {
+            // Refresh the session (backend only extends expiry)
+            await authApi.refreshSession();
+            
+            // Get current user data to ensure we have fresh user info
+            const user = await authApi.getCurrentUser();
+            
+            set({ 
+              user,
+              isAuthenticated: true,
+              isLoading: false,
+              error: null
+            });
+          } catch (error) {
+            set({ 
+              user: null,
+              isAuthenticated: false,
+              isLoading: false,
+              error: { message: 'Session expired. Please log in again.' }
+            });
+            throw error;
+          }
+        },
+
+        clearError: () => {
+          set({ error: null });
+        },
+
+        setLoading: (loading: boolean) => {
+          set({ isLoading: loading });
+        },
+
+        hasPermission: (permission: string) => {
+          const { user } = get();
+          if (!user || !user.isActive) return false;
+          
+          const userPermissions = ROLE_PERMISSIONS[user.role] || [];
+          return userPermissions.some(p => p === permission);
+        },
+
+        hasRole: (role: UserRole) => {
+          const { user } = get();
+          return user?.role === role;
         }
-      },
-
-      logout: async () => {
-        set({ isLoading: true });
-        
-        try {
-          await authApi.logout();
-        } catch {
-          console.warn('Logout API call failed, clearing local state anyway');
-        } finally {
-          set({ 
-            user: null,
-            isAuthenticated: false,
-            isLoading: false,
-            error: null
-          });
-        }
-      },
-
-      refreshSession: async () => {
-        set({ isLoading: true });
-        
-        try {
-          const response = await authApi.refreshSession();
-          set({ 
-            user: response.user,
-            isAuthenticated: true,
-            isLoading: false,
-            error: null
-          });
-        } catch (error) {
-          set({ 
-            user: null,
-            isAuthenticated: false,
-            isLoading: false,
-            error: { message: 'Session expired. Please log in again.' }
-          });
-          throw error;
-        }
-      },
-
-      clearError: () => {
-        set({ error: null });
-      },
-
-      setLoading: (loading: boolean) => {
-        set({ isLoading: loading });
-      },
-
-      hasPermission: (permission: string) => {
-        const { user } = get();
-        if (!user || !user.isActive) return false;
-        
-        const userPermissions = ROLE_PERMISSIONS[user.role] || [];
-        return userPermissions.some(p => p === permission);
-      },
-
-      hasRole: (role: UserRole) => {
-        const { user } = get();
-        return user?.role === role;
+      }),
+      {
+        name: 'auth-store',
+        partialize: (state: AuthStore) => ({ 
+          // Don't persist sensitive data, only basic auth state
+          isAuthenticated: state.isAuthenticated,
+          user: state.user ? {
+            id: state.user.id,
+            email: state.user.email,
+            full_name: state.user.full_name,
+            role: state.user.role,
+            status: state.user.status
+          } : null
+        })
       }
-    }),
-    {
-      name: 'auth-store',
-      partialize: (state: AuthStore) => ({ 
-        // Don't persist sensitive data, only basic auth state
-        isAuthenticated: state.isAuthenticated,
-        user: state.user ? {
-          id: state.user.id,
-          email: state.user.email,
-          firstName: state.user.firstName,
-          lastName: state.user.lastName,
-          role: state.user.role
-        } : null
-      })
-    }
+    )
   )
 );

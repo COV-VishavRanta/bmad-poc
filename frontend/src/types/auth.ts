@@ -3,11 +3,14 @@ export type UserRole = 'HR' | 'PC' | 'RM';
 export interface User {
   id: string;
   email: string;
-  firstName: string;
-  lastName: string;
+  full_name: string;
   role: UserRole;
-  isActive: boolean;
-  lastLogin?: Date;
+  status: string;
+  last_login?: Date;
+  // Legacy properties for backward compatibility
+  firstName?: string;
+  lastName?: string;
+  isActive?: boolean;
 }
 
 export interface LoginCredentials {
