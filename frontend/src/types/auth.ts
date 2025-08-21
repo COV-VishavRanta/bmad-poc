@@ -59,5 +59,6 @@ export interface NavigationItem {
   href: string;
   icon?: string;
   roles: UserRole[];
+  permissions?: string[];
   children?: NavigationItem[];
 }

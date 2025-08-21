@@ -1,40 +1,40 @@
 'use client';
 
-import RoleGuard from '@/components/auth/RoleGuard';
+import { usePermissions } from '@/components/auth/WithPermissions';
 import { useAuth } from '@/lib/auth';
 import { NavigationItem } from '@/types/auth';
 import {
-  AccountCircle,
-  Assessment,
-  Assignment,
-  Business,
-  Dashboard,
-  Group,
-  Logout,
-  Menu as MenuIcon,
-  People,
-  Schedule,
-  Settings,
-  Work,
+    AccountCircle,
+    Assessment,
+    Assignment,
+    Business,
+    Dashboard,
+    Group,
+    Logout,
+    Menu as MenuIcon,
+    People,
+    Schedule,
+    Settings,
+    Work,
 } from '@mui/icons-material';
 import {
-  AppBar,
-  Avatar,
-  Box,
-  Divider,
-  Drawer,
-  IconButton,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
-  Menu,
-  MenuItem,
-  Toolbar,
-  Typography,
-  useMediaQuery,
-  useTheme,
+    AppBar,
+    Avatar,
+    Box,
+    Divider,
+    Drawer,
+    IconButton,
+    List,
+    ListItem,
+    ListItemButton,
+    ListItemIcon,
+    ListItemText,
+    Menu,
+    MenuItem,
+    Toolbar,
+    Typography,
+    useMediaQuery,
+    useTheme,
 } from '@mui/material';
 import { usePathname, useRouter } from 'next/navigation';
 import { useState } from 'react';
@@ -45,54 +45,63 @@ const NAVIGATION_ITEMS: NavigationItem[] = [
     href: '/dashboard',
     icon: 'Dashboard',
     roles: ['HR', 'PC', 'RM'],
+    permissions: ['read:dashboard'],
   },
   {
     label: 'Users',
     href: '/users',
     icon: 'People',
     roles: ['HR'],
+    permissions: ['read:users'],
   },
   {
     label: 'Clients',
     href: '/clients',
     icon: 'Business',
     roles: ['HR', 'PC'],
+    permissions: ['read:clients'],
   },
   {
     label: 'Projects',
     href: '/projects',
     icon: 'Work',
     roles: ['HR', 'PC'],
+    permissions: ['read:projects'],
   },
   {
     label: 'SOWs',
     href: '/sows',
     icon: 'Assignment',
     roles: ['HR', 'PC'],
+    permissions: ['read:sows'],
   },
   {
     label: 'Assignments',
     href: '/assignments',
     icon: 'Schedule',
     roles: ['HR', 'RM'],
+    permissions: ['read:assignments'],
   },
   {
     label: 'Timelines',
     href: '/timelines',
     icon: 'Schedule',
     roles: ['HR', 'RM'],
+    permissions: ['read:timelines'],
   },
   {
     label: 'Teams',
     href: '/teams',
     icon: 'Group',
     roles: ['HR', 'RM'],
+    permissions: ['read:teams'],
   },
   {
     label: 'Reports',
     href: '/reports',
     icon: 'Assessment',
     roles: ['HR', 'PC', 'RM'],
+    permissions: ['read:reports'],
   },
 ];
 
@@ -117,6 +126,7 @@ export default function MainNavigation({ children }: MainNavigationProps) {
   const [userMenuAnchor, setUserMenuAnchor] = useState<null | HTMLElement>(null);
   
   const { user, logout } = useAuth();
+  const { canAccess } = usePermissions();
   const router = useRouter();
   const pathname = usePathname();
   const theme = useTheme();
@@ -185,20 +195,24 @@ export default function MainNavigation({ children }: MainNavigationProps) {
       </Box>
       
       <List>
-        {NAVIGATION_ITEMS.map((item) => (
-          <RoleGuard key={item.href} allowedRoles={item.roles}>
-            <ListItem disablePadding>
-              <ListItemButton
-                selected={pathname === item.href}
-                onClick={() => handleNavigate(item.href)}
-              >
-                <ListItemIcon>
-                  {getIcon(item.icon || '')}
-                </ListItemIcon>
-                <ListItemText primary={item.label} />
-              </ListItemButton>
-            </ListItem>
-          </RoleGuard>
+        {NAVIGATION_ITEMS.filter(item => 
+          canAccess({
+            roles: item.roles,
+            permissions: item.permissions,
+            requireAll: false
+          })
+        ).map((item) => (
+          <ListItem key={item.href} disablePadding>
+            <ListItemButton
+              selected={pathname === item.href}
+              onClick={() => handleNavigate(item.href)}
+            >
+              <ListItemIcon>
+                {getIcon(item.icon || '')}
+              </ListItemIcon>
+              <ListItemText primary={item.label} />
+            </ListItemButton>
+          </ListItem>
         ))}
       </List>
       
