@@ -3,20 +3,20 @@
 import RoleGuard from '@/components/auth/RoleGuard';
 import { useAuth } from '@/lib/auth';
 import {
-    Business,
-    Dashboard as DashboardIcon,
-    People,
-    TrendingUp,
-    Work,
+  Business,
+  Dashboard as DashboardIcon,
+  People,
+  TrendingUp,
+  Work,
 } from '@mui/icons-material';
 import {
-    Box,
-    Card,
-    CardContent,
-    Chip,
-    Paper,
-    Stack,
-    Typography,
+  Box,
+  Card,
+  CardContent,
+  Chip,
+  Paper,
+  Stack,
+  Typography,
 } from '@mui/material';
 
 interface StatCardProps {
@@ -77,7 +77,7 @@ export default function DashboardPage() {
           Dashboard
         </Typography>
         <Typography variant="body1" color="text.secondary">
-          Welcome back, {user?.firstName || 'User'}!
+          Welcome back, {user?.full_name?.split(' ')[0] || user?.email || 'User'}!
         </Typography>
         {user && (
           <Chip

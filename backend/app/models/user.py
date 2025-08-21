@@ -58,6 +58,11 @@ class User(BaseModel):
         index=True,
     )
 
+    # Additional user information
+    phone = Column(String(20), nullable=True)
+    department = Column(String(100), nullable=True)
+    hire_date = Column(DateTime, nullable=True)
+
     # Login tracking
     last_login = Column(DateTime, nullable=True)
 

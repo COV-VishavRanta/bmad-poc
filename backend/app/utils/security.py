@@ -93,6 +93,51 @@ def calculate_session_expiry(hours: int = SESSION_EXPIRE_HOURS) -> datetime:
     return datetime.now(timezone.utc) + timedelta(hours=hours)
 
 
+def generate_secure_password(length: int = 12) -> str:
+    """
+    Generate a secure random password.
+
+    Args:
+        length: Length of password to generate (default: 12)
+
+    Returns:
+        str: Secure random password meeting strength requirements
+
+    Example:
+        >>> password = generate_secure_password()
+        >>> is_strong, issues = is_password_strong(password)
+        >>> is_strong
+        True
+    """
+    # Ensure we have at least one of each required character type
+    if length < 8:
+        length = 8
+    
+    # Character sets
+    uppercase = string.ascii_uppercase
+    lowercase = string.ascii_lowercase
+    digits = string.digits
+    special = "!@#$%^&*"
+    
+    # Guarantee at least one of each type
+    password_chars = [
+        secrets.choice(uppercase),
+        secrets.choice(lowercase),
+        secrets.choice(digits),
+        secrets.choice(special),
+    ]
+    
+    # Fill the rest with random characters from all sets
+    all_chars = uppercase + lowercase + digits + special
+    for _ in range(length - 4):
+        password_chars.append(secrets.choice(all_chars))
+    
+    # Shuffle the password to avoid predictable patterns
+    secrets.SystemRandom().shuffle(password_chars)
+    
+    return "".join(password_chars)
+
+
 def is_password_strong(password: str) -> tuple[bool, list[str]]:
     """
     Check if password meets strength requirements.

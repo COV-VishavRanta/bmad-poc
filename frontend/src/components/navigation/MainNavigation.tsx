@@ -4,37 +4,37 @@ import RoleGuard from '@/components/auth/RoleGuard';
 import { useAuth } from '@/lib/auth';
 import { NavigationItem } from '@/types/auth';
 import {
-    AccountCircle,
-    Assessment,
-    Assignment,
-    Business,
-    Dashboard,
-    Group,
-    Logout,
-    Menu as MenuIcon,
-    People,
-    Schedule,
-    Settings,
-    Work,
+  AccountCircle,
+  Assessment,
+  Assignment,
+  Business,
+  Dashboard,
+  Group,
+  Logout,
+  Menu as MenuIcon,
+  People,
+  Schedule,
+  Settings,
+  Work,
 } from '@mui/icons-material';
 import {
-    AppBar,
-    Avatar,
-    Box,
-    Divider,
-    Drawer,
-    IconButton,
-    List,
-    ListItem,
-    ListItemButton,
-    ListItemIcon,
-    ListItemText,
-    Menu,
-    MenuItem,
-    Toolbar,
-    Typography,
-    useMediaQuery,
-    useTheme,
+  AppBar,
+  Avatar,
+  Box,
+  Divider,
+  Drawer,
+  IconButton,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  Menu,
+  MenuItem,
+  Toolbar,
+  Typography,
+  useMediaQuery,
+  useTheme,
 } from '@mui/material';
 import { usePathname, useRouter } from 'next/navigation';
 import { useState } from 'react';
@@ -154,12 +154,21 @@ export default function MainNavigation({ children }: MainNavigationProps) {
 
   const getUserDisplayName = () => {
     if (!user) return 'User';
-    return `${user.firstName} ${user.lastName}`;
+    return user.full_name || user.email || 'User';
   };
 
   const getUserInitials = () => {
     if (!user) return 'U';
-    return `${user.firstName.charAt(0)}${user.lastName.charAt(0)}`;
+    if (user.full_name && user.full_name.trim()) {
+      const names = user.full_name.trim().split(' ').filter(name => name.length > 0);
+      if (names.length >= 2) {
+        return `${names[0].charAt(0)}${names[names.length - 1].charAt(0)}`.toUpperCase();
+      }
+      if (names.length === 1) {
+        return names[0].charAt(0).toUpperCase();
+      }
+    }
+    return user.email?.charAt(0).toUpperCase() || 'U';
   };
 
   const drawerContent = (

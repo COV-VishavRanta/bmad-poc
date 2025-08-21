@@ -66,7 +66,8 @@ class AuthApiClient {
   }
 
   async getCurrentUser(): Promise<User> {
-    return this.request<User>('/api/auth/me');
+    const response = await this.request<{ user: User }>('/api/auth/me');
+    return response.user;
   }
 
   async refreshSession(): Promise<AuthResponse> {

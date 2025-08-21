@@ -39,8 +39,9 @@ from app.utils.security import mask_session_id
 router = APIRouter(prefix="/api/auth", tags=["Authentication"])
 
 # Cookie configuration
+import os
 COOKIE_NAME = "clientops_session"
-COOKIE_SECURE = True  # Set to False for development over HTTP
+COOKIE_SECURE = os.getenv("ENVIRONMENT", "development").lower() == "production"  # Only secure in production
 COOKIE_SAMESITE = "lax"
 COOKIE_HTTPONLY = True
 

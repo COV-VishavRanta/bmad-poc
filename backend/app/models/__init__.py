@@ -34,6 +34,7 @@ from app.models.sow import SOW, SOWHistory, SOWRole, SOWRoleName, SOWStatus
 
 # Import all models to register them with SQLAlchemy metadata
 from app.models.user import User, UserRole, UserSession, UserStatus
+from app.models.user_history import UserHistory
 
 # Export all models and enums for easy importing
 __all__ = [
@@ -43,6 +44,7 @@ __all__ = [
     # User models
     "User",
     "UserSession",
+    "UserHistory",
     "UserRole",
     "UserStatus",
     # Client models

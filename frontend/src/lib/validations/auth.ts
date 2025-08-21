@@ -16,11 +16,14 @@ export const loginSchema = z.object({
 export const userSchema = z.object({
   id: z.string(),
   email: z.string().email(),
-  firstName: z.string().min(1, 'First name is required'),
-  lastName: z.string().min(1, 'Last name is required'),
+  full_name: z.string().min(1, 'Full name is required'),
   role: z.enum(['HR', 'PC', 'RM']),
-  isActive: z.boolean(),
-  lastLogin: z.date().optional(),
+  status: z.string(),
+  last_login: z.date().optional(),
+  // Legacy fields for backward compatibility
+  firstName: z.string().optional(),
+  lastName: z.string().optional(),
+  isActive: z.boolean().optional(),
 });
 
 export const authResponseSchema = z.object({
