@@ -31,16 +31,20 @@ from app.models import (
     UserRole,
     UserStatus,
 )
+from app.utils.security import hash_password
 
 
 def create_demo_users(db: Session) -> dict:
     """Create demo users for each role."""
     users = {}
 
+    # Demo password for all users: TempPass123!
+    demo_password_hash = hash_password("TempPass123!")
+
     # HR Manager
     hr_user = User(
         email="hr@example.com",
-        password_hash="$2b$12$dummy_hash_for_demo",  # In real app, use proper password hashing
+        password_hash=demo_password_hash,
         full_name="Sarah Johnson",
         role=UserRole.HR,
         status=UserStatus.ACTIVE,
@@ -51,7 +55,7 @@ def create_demo_users(db: Session) -> dict:
     # Project Coordinator
     pc_user = User(
         email="pc@example.com",
-        password_hash="$2b$12$dummy_hash_for_demo",
+        password_hash=demo_password_hash,
         full_name="Mike Chen",
         role=UserRole.PC,
         status=UserStatus.ACTIVE,
@@ -62,7 +66,7 @@ def create_demo_users(db: Session) -> dict:
     # Resource Manager
     rm_user = User(
         email="rm@example.com",
-        password_hash="$2b$12$dummy_hash_for_demo",
+        password_hash=demo_password_hash,
         full_name="Lisa Rodriguez",
         role=UserRole.RM,
         status=UserStatus.ACTIVE,
@@ -73,7 +77,7 @@ def create_demo_users(db: Session) -> dict:
     # Demo Developers
     dev1 = User(
         email="john.developer@example.com",
-        password_hash="$2b$12$dummy_hash_for_demo",
+        password_hash=demo_password_hash,
         full_name="John Smith",
         role=UserRole.RM,  # Developers are managed by RM
         status=UserStatus.ACTIVE,
@@ -83,7 +87,7 @@ def create_demo_users(db: Session) -> dict:
 
     dev2 = User(
         email="jane.frontend@example.com",
-        password_hash="$2b$12$dummy_hash_for_demo",
+        password_hash=demo_password_hash,
         full_name="Jane Wilson",
         role=UserRole.RM,
         status=UserStatus.ACTIVE,

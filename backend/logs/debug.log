@@ -1,2 +1,1613 @@
 2025-08-21 09:12:42,280 - __main__ - INFO - ClientOps API starting up
 2025-08-21 09:12:51,198 - __main__ - INFO - ClientOps API shutting down
+2025-08-21 10:19:18,739 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:20:39,280 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:20:49,984 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:22:56,476 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:23:22,647 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:23:22,648 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:23:23,083 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:23:23,424 - app.core.middleware - ERROR - Request failed
+2025-08-21 10:23:23,484 - app.core.exception_handlers - ERROR - Unhandled exception
+2025-08-21 10:23:24,030 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:23:24,370 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:23:24,373 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:23:24,376 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:23:24,377 - app.core.middleware - INFO - Request completed
+2025-08-21 10:23:24,378 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:23:24,385 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:23:24,663 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:23:24,993 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:23:25,329 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:23:25,330 - app.core.middleware - INFO - Request completed
+2025-08-21 10:23:25,331 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:23:25,336 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:23:25,636 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:23:25,959 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:23:25,963 - app.core.exception_handlers - WARNING - HTTP exception: 403
+2025-08-21 10:23:25,964 - app.core.middleware - INFO - Request completed
+2025-08-21 10:23:25,965 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 403 Forbidden"
+2025-08-21 10:23:25,970 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:23:26,254 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:23:26,257 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:23:26,259 - app.core.exception_handlers - WARNING - Validation error
+2025-08-21 10:23:26,260 - app.core.middleware - INFO - Request completed
+2025-08-21 10:23:26,261 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 422 Unprocessable Entity"
+2025-08-21 10:23:26,263 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:23:26,591 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:23:26,967 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:23:27,030 - app.core.middleware - INFO - Request completed
+2025-08-21 10:23:27,031 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/logout "HTTP/1.1 200 OK"
+2025-08-21 10:23:27,033 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:23:27,362 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:23:27,365 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:23:27,367 - app.core.middleware - INFO - Request completed
+2025-08-21 10:23:27,368 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/logout "HTTP/1.1 200 OK"
+2025-08-21 10:23:27,370 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:23:27,746 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:23:28,140 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:23:28,149 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:23:28,150 - app.core.middleware - INFO - Request completed
+2025-08-21 10:23:28,151 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:23:28,158 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:23:28,474 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:23:28,476 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:23:28,478 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:23:28,479 - app.core.middleware - INFO - Request completed
+2025-08-21 10:23:28,480 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:23:28,486 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:23:28,827 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:23:29,197 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:23:29,205 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:23:29,206 - app.core.middleware - INFO - Request completed
+2025-08-21 10:23:29,207 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/refresh "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:23:29,275 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:23:29,635 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:23:29,638 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:23:29,641 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:23:29,642 - app.core.middleware - INFO - Request completed
+2025-08-21 10:23:29,643 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/refresh "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:23:29,644 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:23:29,955 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:23:30,331 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:23:30,336 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:23:30,337 - app.core.middleware - INFO - Request completed
+2025-08-21 10:23:30,337 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:23:30,347 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:23:30,629 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:23:30,975 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:23:30,984 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:23:30,985 - app.core.middleware - INFO - Request completed
+2025-08-21 10:23:30,986 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:23:30,994 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:23:31,350 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:23:31,755 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:23:31,766 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:23:31,767 - app.core.middleware - INFO - Request completed
+2025-08-21 10:23:31,768 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:23:31,779 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:23:32,056 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:23:32,058 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:23:32,061 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:23:32,062 - app.core.middleware - INFO - Request completed
+2025-08-21 10:23:32,062 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:23:32,064 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:23:32,322 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:23:32,691 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:23:32,699 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:23:32,700 - app.core.middleware - INFO - Request completed
+2025-08-21 10:23:32,701 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/sessions "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:23:32,708 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:23:33,015 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:23:33,017 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:23:33,019 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:23:33,020 - app.core.middleware - INFO - Request completed
+2025-08-21 10:23:33,020 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/sessions "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:23:33,023 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:23:33,287 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:23:33,672 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:23:33,681 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:23:33,681 - app.core.middleware - INFO - Request completed
+2025-08-21 10:23:33,682 - httpx - INFO - HTTP Request: DELETE http://testserver/api/auth/sessions/all "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:23:33,690 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:23:33,980 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:23:33,984 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:23:33,986 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:23:33,986 - app.core.middleware - INFO - Request completed
+2025-08-21 10:23:33,987 - httpx - INFO - HTTP Request: DELETE http://testserver/api/auth/sessions/all "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:23:33,989 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:23:34,257 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:23:34,628 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:23:34,635 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:23:34,635 - app.core.middleware - INFO - Request completed
+2025-08-21 10:23:34,636 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:23:34,643 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:23:34,961 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:23:34,963 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:23:34,963 - app.core.middleware - INFO - Request completed
+2025-08-21 10:23:34,964 - httpx - INFO - HTTP Request: GET http://testserver/api/health "HTTP/1.1 200 OK"
+2025-08-21 10:23:34,965 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:23:35,213 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:23:35,215 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:23:35,219 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:23:35,220 - app.core.middleware - INFO - Request completed
+2025-08-21 10:23:35,221 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:23:35,223 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:25:25,437 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:25:25,438 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:25:25,871 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:25:26,227 - app.core.middleware - ERROR - Request failed
+2025-08-21 10:25:26,243 - app.core.exception_handlers - ERROR - Unhandled exception
+2025-08-21 10:25:26,652 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:26:53,465 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:26:53,467 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:26:53,909 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:26:54,293 - app.core.middleware - ERROR - Request failed
+2025-08-21 10:26:54,312 - app.core.exception_handlers - ERROR - Unhandled exception
+2025-08-21 10:26:54,772 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:27:15,389 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:27:15,390 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:27:15,862 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:27:16,251 - app.core.middleware - ERROR - Request failed
+2025-08-21 10:27:16,268 - app.core.exception_handlers - ERROR - Unhandled exception
+2025-08-21 10:27:16,728 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:27:57,694 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:27:57,696 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:27:58,139 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:27:58,499 - app.core.middleware - INFO - Request completed
+2025-08-21 10:27:58,500 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 200 OK"
+2025-08-21 10:27:58,502 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:29:24,296 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:29:24,297 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:29:24,770 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:29:25,152 - app.core.middleware - INFO - Request completed
+2025-08-21 10:29:25,153 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 200 OK"
+2025-08-21 10:29:25,155 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:29:25,460 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:29:25,462 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:29:25,465 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:29:25,465 - app.core.middleware - INFO - Request completed
+2025-08-21 10:29:25,466 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:29:25,469 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:29:25,766 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:29:26,133 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:29:26,500 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:29:26,500 - app.core.middleware - INFO - Request completed
+2025-08-21 10:29:26,501 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:29:26,504 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:29:26,853 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:29:27,228 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:29:27,231 - app.core.exception_handlers - WARNING - HTTP exception: 403
+2025-08-21 10:29:27,232 - app.core.middleware - INFO - Request completed
+2025-08-21 10:29:27,233 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 403 Forbidden"
+2025-08-21 10:29:27,235 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:29:27,553 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:29:27,555 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:29:27,558 - app.core.exception_handlers - WARNING - Validation error
+2025-08-21 10:29:27,558 - app.core.middleware - INFO - Request completed
+2025-08-21 10:29:27,560 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 422 Unprocessable Entity"
+2025-08-21 10:29:27,561 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:29:27,893 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:29:28,257 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:29:28,288 - app.core.middleware - INFO - Request completed
+2025-08-21 10:29:28,289 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/logout "HTTP/1.1 200 OK"
+2025-08-21 10:29:28,290 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:29:28,645 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:29:28,647 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:29:28,649 - app.core.middleware - INFO - Request completed
+2025-08-21 10:29:28,650 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/logout "HTTP/1.1 200 OK"
+2025-08-21 10:29:28,651 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:29:28,948 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:29:29,315 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:29:29,322 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:29:29,323 - app.core.middleware - INFO - Request completed
+2025-08-21 10:29:29,323 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:29:29,327 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:29:29,681 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:29:29,682 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:29:29,685 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:29:29,685 - app.core.middleware - INFO - Request completed
+2025-08-21 10:29:29,686 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:29:29,688 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:29:29,969 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:29:30,391 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:29:30,397 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:29:30,398 - app.core.middleware - INFO - Request completed
+2025-08-21 10:29:30,399 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/refresh "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:29:30,402 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:29:30,684 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:29:30,686 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:29:30,688 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:29:30,689 - app.core.middleware - INFO - Request completed
+2025-08-21 10:29:30,689 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/refresh "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:29:30,690 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:29:31,005 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:29:31,389 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:29:31,397 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:29:31,398 - app.core.middleware - INFO - Request completed
+2025-08-21 10:29:31,399 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:29:31,401 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:29:31,653 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:29:32,025 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:29:32,034 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:29:32,035 - app.core.middleware - INFO - Request completed
+2025-08-21 10:29:32,036 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:29:32,038 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:29:32,333 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:29:32,716 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:29:32,723 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:29:32,726 - app.core.middleware - INFO - Request completed
+2025-08-21 10:29:32,727 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:29:32,730 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:29:33,008 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:29:33,011 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:29:33,013 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:29:33,014 - app.core.middleware - INFO - Request completed
+2025-08-21 10:29:33,014 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:29:33,016 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:29:33,271 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:29:33,612 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:29:33,618 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:29:33,618 - app.core.middleware - INFO - Request completed
+2025-08-21 10:29:33,619 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/sessions "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:29:33,621 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:29:33,885 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:29:33,887 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:29:33,889 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:29:33,890 - app.core.middleware - INFO - Request completed
+2025-08-21 10:29:33,890 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/sessions "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:29:33,892 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:29:34,171 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:29:34,526 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:29:34,533 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:29:34,533 - app.core.middleware - INFO - Request completed
+2025-08-21 10:29:34,534 - httpx - INFO - HTTP Request: DELETE http://testserver/api/auth/sessions/all "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:29:34,537 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:29:34,803 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:29:34,805 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:29:34,806 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:29:34,807 - app.core.middleware - INFO - Request completed
+2025-08-21 10:29:34,808 - httpx - INFO - HTTP Request: DELETE http://testserver/api/auth/sessions/all "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:29:34,809 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:29:35,070 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:29:35,424 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:29:35,430 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:29:35,430 - app.core.middleware - INFO - Request completed
+2025-08-21 10:29:35,431 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:29:35,434 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:29:35,697 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:29:35,699 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:29:35,700 - app.core.middleware - INFO - Request completed
+2025-08-21 10:29:35,700 - httpx - INFO - HTTP Request: GET http://testserver/api/health "HTTP/1.1 200 OK"
+2025-08-21 10:29:35,702 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:29:35,959 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:29:35,962 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:29:35,965 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:29:35,965 - app.core.middleware - INFO - Request completed
+2025-08-21 10:29:35,966 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:29:35,968 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:33:42,778 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:33:52,562 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:34:48,983 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:38:39,290 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:38:39,291 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:38:39,754 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:38:40,130 - app.core.middleware - INFO - Request completed
+2025-08-21 10:38:40,132 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 200 OK"
+2025-08-21 10:38:40,134 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:38:40,578 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:38:40,581 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:38:40,585 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:38:40,585 - app.core.middleware - INFO - Request completed
+2025-08-21 10:38:40,586 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:38:40,785 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:38:41,156 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:38:41,528 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:38:41,868 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:38:41,868 - app.core.middleware - INFO - Request completed
+2025-08-21 10:38:41,869 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:38:41,876 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:38:42,148 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:38:42,476 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:38:42,480 - app.core.exception_handlers - WARNING - HTTP exception: 403
+2025-08-21 10:38:42,481 - app.core.middleware - INFO - Request completed
+2025-08-21 10:38:42,481 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 403 Forbidden"
+2025-08-21 10:38:42,487 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:38:42,779 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:38:42,781 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:38:42,784 - app.core.exception_handlers - WARNING - Validation error
+2025-08-21 10:38:42,785 - app.core.middleware - INFO - Request completed
+2025-08-21 10:38:42,786 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 422 Unprocessable Entity"
+2025-08-21 10:38:42,788 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:38:43,079 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:38:43,501 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:38:43,574 - app.core.middleware - INFO - Request completed
+2025-08-21 10:38:43,576 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/logout "HTTP/1.1 200 OK"
+2025-08-21 10:38:43,578 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:38:43,880 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:38:43,883 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:38:43,885 - app.core.middleware - INFO - Request completed
+2025-08-21 10:38:43,887 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/logout "HTTP/1.1 200 OK"
+2025-08-21 10:38:43,889 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:38:44,162 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:38:44,549 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:38:44,557 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:38:44,557 - app.core.middleware - INFO - Request completed
+2025-08-21 10:38:44,558 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:38:44,564 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:38:44,868 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:38:44,870 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:38:44,872 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:38:44,872 - app.core.middleware - INFO - Request completed
+2025-08-21 10:38:44,873 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:38:44,879 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:38:45,166 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:38:45,576 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:38:45,584 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:38:45,585 - app.core.middleware - INFO - Request completed
+2025-08-21 10:38:45,585 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/refresh "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:38:45,592 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:38:45,932 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:38:45,933 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:38:45,935 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:38:45,936 - app.core.middleware - INFO - Request completed
+2025-08-21 10:38:45,937 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/refresh "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:38:45,938 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:38:46,194 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:38:46,588 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:38:46,596 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:38:46,596 - app.core.middleware - INFO - Request completed
+2025-08-21 10:38:46,597 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:38:46,603 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:38:46,888 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:38:47,223 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:38:47,235 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:38:47,235 - app.core.middleware - INFO - Request completed
+2025-08-21 10:38:47,236 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:38:47,244 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:38:47,531 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:38:47,890 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:38:47,901 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:38:47,902 - app.core.middleware - INFO - Request completed
+2025-08-21 10:38:47,903 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:38:47,909 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:38:48,243 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:38:48,245 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:38:48,247 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:38:48,247 - app.core.middleware - INFO - Request completed
+2025-08-21 10:38:48,248 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:38:48,249 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:38:48,507 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:38:48,886 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:38:48,900 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:38:48,901 - app.core.middleware - INFO - Request completed
+2025-08-21 10:38:48,902 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/sessions "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:38:48,911 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:38:49,232 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:38:49,235 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:38:49,236 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:38:49,236 - app.core.middleware - INFO - Request completed
+2025-08-21 10:38:49,237 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/sessions "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:38:49,239 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:38:49,538 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:38:49,942 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:38:49,951 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:38:49,951 - app.core.middleware - INFO - Request completed
+2025-08-21 10:38:49,953 - httpx - INFO - HTTP Request: DELETE http://testserver/api/auth/sessions/all "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:38:49,960 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:38:50,260 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:38:50,262 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:38:50,264 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:38:50,265 - app.core.middleware - INFO - Request completed
+2025-08-21 10:38:50,266 - httpx - INFO - HTTP Request: DELETE http://testserver/api/auth/sessions/all "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:38:50,267 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:38:50,542 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:38:50,907 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:38:50,916 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:38:50,917 - app.core.middleware - INFO - Request completed
+2025-08-21 10:38:50,917 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:38:50,925 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:38:51,197 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:38:51,199 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:38:51,200 - app.core.middleware - INFO - Request completed
+2025-08-21 10:38:51,200 - httpx - INFO - HTTP Request: GET http://testserver/api/health "HTTP/1.1 200 OK"
+2025-08-21 10:38:51,202 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:38:51,474 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:38:51,476 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:38:51,480 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:38:51,480 - app.core.middleware - INFO - Request completed
+2025-08-21 10:38:51,481 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:38:51,482 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:40:32,738 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:40:32,739 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:40:33,234 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:40:33,663 - app.core.middleware - INFO - Request completed
+2025-08-21 10:40:33,665 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 200 OK"
+2025-08-21 10:40:33,669 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:41:02,125 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:41:02,129 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:41:02,202 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:41:02,203 - app.core.middleware - INFO - Request completed
+2025-08-21 10:41:02,204 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:41:02,413 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:41:15,621 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:41:15,622 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:41:16,128 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:41:16,169 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:41:16,170 - app.core.middleware - INFO - Request completed
+2025-08-21 10:41:16,172 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:41:16,357 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:43:44,578 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:43:44,579 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:43:44,993 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:43:45,377 - app.core.middleware - INFO - Request completed
+2025-08-21 10:43:45,380 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 200 OK"
+2025-08-21 10:43:45,383 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:43:45,803 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:43:45,805 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:43:45,807 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:43:45,808 - app.core.middleware - INFO - Request completed
+2025-08-21 10:43:45,808 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:43:45,811 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:43:46,061 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:43:46,416 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:43:46,760 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:43:46,761 - app.core.middleware - INFO - Request completed
+2025-08-21 10:43:46,762 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:43:46,765 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:43:47,173 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:43:47,594 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:43:47,598 - app.core.exception_handlers - WARNING - HTTP exception: 403
+2025-08-21 10:43:47,599 - app.core.middleware - INFO - Request completed
+2025-08-21 10:43:47,600 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 403 Forbidden"
+2025-08-21 10:43:47,603 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:43:47,965 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:43:47,968 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:43:47,971 - app.core.exception_handlers - WARNING - Validation error
+2025-08-21 10:43:47,971 - app.core.middleware - INFO - Request completed
+2025-08-21 10:43:47,972 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 422 Unprocessable Entity"
+2025-08-21 10:43:47,975 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:43:48,284 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:43:48,686 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:43:48,718 - app.core.middleware - INFO - Request completed
+2025-08-21 10:43:48,719 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/logout "HTTP/1.1 200 OK"
+2025-08-21 10:43:48,721 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:43:49,075 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:43:49,078 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:43:49,081 - app.core.middleware - INFO - Request completed
+2025-08-21 10:43:49,082 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/logout "HTTP/1.1 200 OK"
+2025-08-21 10:43:49,084 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:43:49,399 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:43:49,812 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:43:49,819 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:43:49,820 - app.core.middleware - INFO - Request completed
+2025-08-21 10:43:49,821 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:43:49,825 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:43:50,252 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:43:50,255 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:43:50,257 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:43:50,258 - app.core.middleware - INFO - Request completed
+2025-08-21 10:43:50,259 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:43:50,262 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:43:50,656 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:43:51,067 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:43:51,076 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:43:51,077 - app.core.middleware - INFO - Request completed
+2025-08-21 10:43:51,078 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/refresh "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:43:51,080 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:43:51,441 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:43:51,444 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:43:51,446 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:43:51,447 - app.core.middleware - INFO - Request completed
+2025-08-21 10:43:51,448 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/refresh "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:43:51,450 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:43:51,788 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:43:52,207 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:43:52,216 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:43:52,217 - app.core.middleware - INFO - Request completed
+2025-08-21 10:43:52,217 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:43:52,220 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:43:52,572 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:43:52,998 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:43:53,005 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:43:53,005 - app.core.middleware - INFO - Request completed
+2025-08-21 10:43:53,006 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:43:53,010 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:43:53,371 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:43:53,788 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:43:53,801 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:43:53,802 - app.core.middleware - INFO - Request completed
+2025-08-21 10:43:53,803 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:43:53,807 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:43:54,162 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:43:54,165 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:43:54,169 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:43:54,169 - app.core.middleware - INFO - Request completed
+2025-08-21 10:43:54,170 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:43:54,172 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:43:54,514 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:43:54,919 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:43:54,927 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:43:54,927 - app.core.middleware - INFO - Request completed
+2025-08-21 10:43:54,928 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/sessions "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:43:54,932 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:43:55,308 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:43:55,311 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:43:55,314 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:43:55,315 - app.core.middleware - INFO - Request completed
+2025-08-21 10:43:55,315 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/sessions "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:43:55,317 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:43:55,713 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:43:56,124 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:43:56,133 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:43:56,134 - app.core.middleware - INFO - Request completed
+2025-08-21 10:43:56,135 - httpx - INFO - HTTP Request: DELETE http://testserver/api/auth/sessions/all "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:43:56,138 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:43:56,494 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:43:56,497 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:43:56,499 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:43:56,500 - app.core.middleware - INFO - Request completed
+2025-08-21 10:43:56,501 - httpx - INFO - HTTP Request: DELETE http://testserver/api/auth/sessions/all "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:43:56,502 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:43:56,838 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:43:57,262 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:43:57,269 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:43:57,270 - app.core.middleware - INFO - Request completed
+2025-08-21 10:43:57,271 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:43:57,275 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:43:57,598 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:43:57,601 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:43:57,602 - app.core.middleware - INFO - Request completed
+2025-08-21 10:43:57,603 - httpx - INFO - HTTP Request: GET http://testserver/api/health "HTTP/1.1 200 OK"
+2025-08-21 10:43:57,605 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:43:57,949 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:43:57,952 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:43:57,955 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:43:57,956 - app.core.middleware - INFO - Request completed
+2025-08-21 10:43:57,957 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:43:57,959 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:47:38,969 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:47:38,973 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:47:39,044 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:47:39,045 - app.core.middleware - INFO - Request completed
+2025-08-21 10:47:39,046 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:47:39,237 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:48:11,951 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:48:11,955 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:48:12,015 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:48:12,016 - app.core.middleware - INFO - Request completed
+2025-08-21 10:48:12,017 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:48:12,219 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:48:28,354 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:48:28,358 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:48:28,422 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:48:28,423 - app.core.middleware - INFO - Request completed
+2025-08-21 10:48:28,425 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:48:28,610 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:48:48,318 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:48:48,322 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:48:48,377 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:48:48,377 - app.core.middleware - INFO - Request completed
+2025-08-21 10:48:48,378 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:48:48,380 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:49:33,997 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:49:33,999 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:49:34,434 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:49:34,773 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:49:34,775 - app.core.middleware - INFO - Request completed
+2025-08-21 10:49:34,777 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:49:34,780 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:49:44,937 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:49:44,941 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:49:45,005 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:49:45,006 - app.core.middleware - INFO - Request completed
+2025-08-21 10:49:45,009 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:49:45,011 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:49:45,340 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:49:45,342 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:49:45,738 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:49:46,090 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:49:46,091 - app.core.middleware - INFO - Request completed
+2025-08-21 10:49:46,092 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:49:46,094 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:50:21,433 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:50:21,434 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:50:21,938 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:50:21,953 - app.core.exception_handlers - WARNING - HTTP exception: 403
+2025-08-21 10:50:21,954 - app.core.middleware - INFO - Request completed
+2025-08-21 10:50:21,955 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 403 Forbidden"
+2025-08-21 10:50:21,958 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:50:31,468 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:50:31,471 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:50:31,523 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:50:31,524 - app.core.middleware - INFO - Request completed
+2025-08-21 10:50:31,525 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:50:31,527 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:50:31,838 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:50:31,839 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:50:32,209 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:50:32,545 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:50:32,545 - app.core.middleware - INFO - Request completed
+2025-08-21 10:50:32,546 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:50:32,548 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:50:32,828 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:50:33,151 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:50:33,156 - app.core.exception_handlers - WARNING - HTTP exception: 403
+2025-08-21 10:50:33,157 - app.core.middleware - INFO - Request completed
+2025-08-21 10:50:33,158 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 403 Forbidden"
+2025-08-21 10:50:33,160 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:51:02,551 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:51:02,552 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:51:03,017 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:51:03,398 - app.core.middleware - INFO - Request completed
+2025-08-21 10:51:03,400 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 200 OK"
+2025-08-21 10:51:03,404 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:51:03,772 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:51:03,774 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:51:03,778 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:51:03,779 - app.core.middleware - INFO - Request completed
+2025-08-21 10:51:03,779 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:51:03,781 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:51:04,056 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:51:04,404 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:51:04,746 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:51:04,747 - app.core.middleware - INFO - Request completed
+2025-08-21 10:51:04,748 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:51:04,749 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:51:05,031 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:51:05,376 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:51:05,381 - app.core.exception_handlers - WARNING - HTTP exception: 403
+2025-08-21 10:51:05,381 - app.core.middleware - INFO - Request completed
+2025-08-21 10:51:05,383 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 403 Forbidden"
+2025-08-21 10:51:05,384 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:51:05,709 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:51:05,711 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:51:05,714 - app.core.exception_handlers - WARNING - Validation error
+2025-08-21 10:51:05,715 - app.core.middleware - INFO - Request completed
+2025-08-21 10:51:05,716 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 422 Unprocessable Entity"
+2025-08-21 10:51:05,717 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:51:05,969 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:51:06,337 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:51:06,370 - app.core.middleware - INFO - Request completed
+2025-08-21 10:51:06,371 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/logout "HTTP/1.1 200 OK"
+2025-08-21 10:51:06,373 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:51:06,620 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:51:06,622 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:51:06,625 - app.core.middleware - INFO - Request completed
+2025-08-21 10:51:06,626 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/logout "HTTP/1.1 200 OK"
+2025-08-21 10:51:06,627 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:51:06,891 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:51:07,231 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:51:07,240 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:51:07,240 - app.core.middleware - INFO - Request completed
+2025-08-21 10:51:07,241 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:51:07,245 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:51:07,551 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:51:07,553 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:51:07,555 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:51:07,556 - app.core.middleware - INFO - Request completed
+2025-08-21 10:51:07,557 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:51:07,560 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:51:07,828 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:51:08,187 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:51:08,196 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:51:08,198 - app.core.middleware - INFO - Request completed
+2025-08-21 10:51:08,199 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/refresh "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:51:08,204 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:51:08,466 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:51:08,469 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:51:08,471 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:51:08,471 - app.core.middleware - INFO - Request completed
+2025-08-21 10:51:08,472 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/refresh "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:51:08,473 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:51:08,737 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:51:09,094 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:51:09,102 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:51:09,102 - app.core.middleware - INFO - Request completed
+2025-08-21 10:51:09,103 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:51:09,105 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:51:09,359 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:51:09,687 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:51:09,695 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:51:09,696 - app.core.middleware - INFO - Request completed
+2025-08-21 10:51:09,696 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:51:09,699 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:51:10,011 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:51:10,382 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:51:10,390 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:51:10,390 - app.core.middleware - INFO - Request completed
+2025-08-21 10:51:10,391 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:51:10,395 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:51:10,684 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:51:10,686 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:51:10,689 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:51:10,689 - app.core.middleware - INFO - Request completed
+2025-08-21 10:51:10,690 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:51:10,691 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:51:10,951 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:51:11,313 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:51:11,320 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:51:11,320 - app.core.middleware - INFO - Request completed
+2025-08-21 10:51:11,321 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/sessions "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:51:11,323 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:51:11,588 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:51:11,590 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:51:11,596 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:51:11,596 - app.core.middleware - INFO - Request completed
+2025-08-21 10:51:11,597 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/sessions "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:51:11,598 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:51:11,847 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:51:12,242 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:51:12,249 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:51:12,250 - app.core.middleware - INFO - Request completed
+2025-08-21 10:51:12,250 - httpx - INFO - HTTP Request: DELETE http://testserver/api/auth/sessions/all "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:51:12,255 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:51:12,533 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:51:12,536 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:51:12,538 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:51:12,538 - app.core.middleware - INFO - Request completed
+2025-08-21 10:51:12,539 - httpx - INFO - HTTP Request: DELETE http://testserver/api/auth/sessions/all "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:51:12,540 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:51:12,778 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:51:13,136 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:51:13,145 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:51:13,146 - app.core.middleware - INFO - Request completed
+2025-08-21 10:51:13,146 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:51:13,150 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:51:13,431 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:51:13,484 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:51:13,486 - app.core.middleware - INFO - Request completed
+2025-08-21 10:51:13,487 - httpx - INFO - HTTP Request: GET http://testserver/api/health "HTTP/1.1 200 OK"
+2025-08-21 10:51:13,489 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:51:13,764 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:51:13,767 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:51:13,771 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:51:13,771 - app.core.middleware - INFO - Request completed
+2025-08-21 10:51:13,772 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:51:13,774 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:52:03,316 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:52:03,317 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:52:03,739 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:52:03,780 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:52:03,781 - app.core.middleware - INFO - Request completed
+2025-08-21 10:52:03,782 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:52:03,949 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:52:04,257 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:52:04,259 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:52:04,261 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:52:04,262 - app.core.middleware - INFO - Request completed
+2025-08-21 10:52:04,262 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:52:04,269 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:52:22,921 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:52:22,924 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:52:22,926 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:52:22,927 - app.core.middleware - INFO - Request completed
+2025-08-21 10:52:22,928 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:52:22,930 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:52:48,418 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:52:48,420 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:52:48,837 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:52:48,869 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:52:48,870 - app.core.middleware - INFO - Request completed
+2025-08-21 10:52:48,871 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:52:48,873 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:52:49,156 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:52:49,159 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:52:49,160 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:52:49,161 - app.core.middleware - INFO - Request completed
+2025-08-21 10:52:49,161 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:52:49,163 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:53:31,858 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:53:31,860 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:53:32,291 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:53:32,323 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:53:32,324 - app.core.middleware - INFO - Request completed
+2025-08-21 10:53:32,325 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/refresh "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:53:32,490 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:54:51,618 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:54:51,620 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:54:52,086 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:54:52,131 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:54:52,131 - app.core.middleware - INFO - Request completed
+2025-08-21 10:54:52,132 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/refresh "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:54:52,135 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:54:59,045 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:54:59,046 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:54:59,497 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:54:59,873 - app.core.middleware - INFO - Request completed
+2025-08-21 10:54:59,874 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 200 OK"
+2025-08-21 10:54:59,877 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:00,166 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:00,168 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:00,171 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:00,172 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:00,173 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:00,174 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:00,452 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:00,848 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:01,207 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:01,208 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:01,209 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:01,211 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:01,483 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:01,866 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:01,872 - app.core.exception_handlers - WARNING - HTTP exception: 403
+2025-08-21 10:55:01,873 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:01,874 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 403 Forbidden"
+2025-08-21 10:55:01,878 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:02,217 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:02,219 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:02,221 - app.core.exception_handlers - WARNING - Validation error
+2025-08-21 10:55:02,222 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:02,223 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 422 Unprocessable Entity"
+2025-08-21 10:55:02,224 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:02,512 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:02,907 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:02,939 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:02,940 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/logout "HTTP/1.1 200 OK"
+2025-08-21 10:55:02,941 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:03,253 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:03,255 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:03,257 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:03,258 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/logout "HTTP/1.1 200 OK"
+2025-08-21 10:55:03,260 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:03,531 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:03,904 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:03,910 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:03,911 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:03,912 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:03,914 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:04,275 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:04,277 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:04,279 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:04,280 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:04,281 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:04,283 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:04,555 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:04,972 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:04,982 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:04,982 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:04,983 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/refresh "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:04,985 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:05,294 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:05,297 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:05,299 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:05,299 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:05,300 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/refresh "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:05,301 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:05,577 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:05,999 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:06,010 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:06,010 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:06,011 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:06,200 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:06,518 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:06,931 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:06,941 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:06,942 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:06,944 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:06,950 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:07,259 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:07,631 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:07,639 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:07,639 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:07,640 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:07,647 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:07,952 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:07,954 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:07,956 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:07,956 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:07,957 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:07,958 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:08,222 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:08,563 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:08,569 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:08,570 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:08,570 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/sessions "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:08,578 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:08,873 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:08,875 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:08,876 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:08,877 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:08,878 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/sessions "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:08,879 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:09,171 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:09,597 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:09,605 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:09,606 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:09,607 - httpx - INFO - HTTP Request: DELETE http://testserver/api/auth/sessions/all "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:09,615 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:09,947 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:09,949 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:09,951 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:09,951 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:09,952 - httpx - INFO - HTTP Request: DELETE http://testserver/api/auth/sessions/all "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:09,953 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:10,303 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:10,707 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:10,719 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:10,720 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:10,721 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:10,731 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:11,130 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:11,132 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:11,133 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:11,134 - httpx - INFO - HTTP Request: GET http://testserver/api/health "HTTP/1.1 200 OK"
+2025-08-21 10:55:11,137 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:11,494 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:11,496 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:11,500 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:11,500 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:11,501 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:11,502 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:21,086 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:21,087 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:55:21,534 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:21,895 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:21,896 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 200 OK"
+2025-08-21 10:55:21,899 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:22,177 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:22,180 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:22,185 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:22,185 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:22,186 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:22,188 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:22,464 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:22,857 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:23,233 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:23,234 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:23,235 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:23,237 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:23,501 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:23,880 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:23,883 - app.core.exception_handlers - WARNING - HTTP exception: 403
+2025-08-21 10:55:23,883 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:23,884 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 403 Forbidden"
+2025-08-21 10:55:23,885 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:24,176 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:24,179 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:24,181 - app.core.exception_handlers - WARNING - Validation error
+2025-08-21 10:55:24,181 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:24,182 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 422 Unprocessable Entity"
+2025-08-21 10:55:24,183 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:24,454 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:24,847 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:24,898 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:24,899 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/logout "HTTP/1.1 200 OK"
+2025-08-21 10:55:24,900 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:25,187 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:25,190 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:25,193 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:25,194 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/logout "HTTP/1.1 200 OK"
+2025-08-21 10:55:25,195 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:25,497 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:25,883 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:25,892 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:25,893 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:25,894 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:25,896 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:26,177 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:26,178 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:26,180 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:26,180 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:26,181 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:26,182 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:26,490 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:26,901 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:26,909 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:26,910 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:26,911 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/refresh "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:26,912 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:27,206 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:27,208 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:27,210 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:27,211 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:27,211 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/refresh "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:27,213 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:27,510 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:27,879 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:27,888 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:27,888 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:27,889 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:27,893 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:28,151 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:28,512 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:28,521 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:28,522 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:28,523 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:28,526 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:28,820 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:29,206 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:29,215 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:29,216 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:29,217 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:29,220 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:29,539 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:29,541 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:29,543 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:29,543 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:29,544 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:29,545 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:29,818 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:30,202 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:30,211 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:30,212 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:30,212 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/sessions "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:30,215 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:30,519 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:30,520 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:30,522 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:30,523 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:30,524 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/sessions "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:30,525 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:30,821 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:31,200 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:31,208 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:31,209 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:31,210 - httpx - INFO - HTTP Request: DELETE http://testserver/api/auth/sessions/all "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:31,213 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:31,560 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:31,562 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:31,563 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:31,564 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:31,565 - httpx - INFO - HTTP Request: DELETE http://testserver/api/auth/sessions/all "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:31,566 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:31,852 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:32,281 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:32,291 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:32,292 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:32,293 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:32,296 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:32,577 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:32,579 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:32,579 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:32,580 - httpx - INFO - HTTP Request: GET http://testserver/api/health "HTTP/1.1 200 OK"
+2025-08-21 10:55:32,581 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:55:32,907 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:55:32,910 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:55:32,914 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:55:32,915 - app.core.middleware - INFO - Request completed
+2025-08-21 10:55:32,916 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:55:32,917 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:57:38,043 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:57:38,044 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:57:38,479 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:57:38,854 - app.core.middleware - INFO - Request completed
+2025-08-21 10:57:38,855 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 200 OK"
+2025-08-21 10:57:38,858 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:57:39,222 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:57:39,224 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:57:39,227 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:57:39,228 - app.core.middleware - INFO - Request completed
+2025-08-21 10:57:39,228 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:57:39,230 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:57:39,525 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:57:39,884 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:57:40,247 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:57:40,248 - app.core.middleware - INFO - Request completed
+2025-08-21 10:57:40,249 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:57:40,252 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:57:40,597 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:57:40,959 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:57:40,961 - app.core.exception_handlers - WARNING - HTTP exception: 403
+2025-08-21 10:57:40,962 - app.core.middleware - INFO - Request completed
+2025-08-21 10:57:40,962 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 403 Forbidden"
+2025-08-21 10:57:40,964 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:57:41,309 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:57:41,311 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:57:41,314 - app.core.exception_handlers - WARNING - Validation error
+2025-08-21 10:57:41,314 - app.core.middleware - INFO - Request completed
+2025-08-21 10:57:41,315 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 422 Unprocessable Entity"
+2025-08-21 10:57:41,317 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:57:41,672 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:57:42,025 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:57:42,057 - app.core.middleware - INFO - Request completed
+2025-08-21 10:57:42,058 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/logout "HTTP/1.1 200 OK"
+2025-08-21 10:57:42,061 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:57:42,432 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:57:42,434 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:57:42,437 - app.core.middleware - INFO - Request completed
+2025-08-21 10:57:42,438 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/logout "HTTP/1.1 200 OK"
+2025-08-21 10:57:42,440 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:57:42,733 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:57:43,091 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:57:43,099 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:57:43,099 - app.core.middleware - INFO - Request completed
+2025-08-21 10:57:43,100 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:57:43,103 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:57:43,376 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:57:43,378 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:57:43,380 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:57:43,380 - app.core.middleware - INFO - Request completed
+2025-08-21 10:57:43,381 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:57:43,383 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:57:43,665 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:57:44,068 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:57:44,075 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:57:44,076 - app.core.middleware - INFO - Request completed
+2025-08-21 10:57:44,076 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/refresh "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:57:44,078 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:57:44,363 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:57:44,364 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:57:44,366 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:57:44,366 - app.core.middleware - INFO - Request completed
+2025-08-21 10:57:44,367 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/refresh "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:57:44,369 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:57:44,628 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:57:45,004 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:57:45,011 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:57:45,011 - app.core.middleware - INFO - Request completed
+2025-08-21 10:57:45,012 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:57:45,013 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:57:45,295 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:57:45,646 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:57:45,655 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:57:45,656 - app.core.middleware - INFO - Request completed
+2025-08-21 10:57:45,657 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:57:45,658 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:57:45,934 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:57:46,287 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:57:46,295 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:57:46,296 - app.core.middleware - INFO - Request completed
+2025-08-21 10:57:46,297 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:57:46,299 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:57:46,624 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:57:46,626 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:57:46,628 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:57:46,628 - app.core.middleware - INFO - Request completed
+2025-08-21 10:57:46,629 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:57:46,631 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:57:46,978 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:57:47,333 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:57:47,339 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:57:47,340 - app.core.middleware - INFO - Request completed
+2025-08-21 10:57:47,340 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/sessions "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:57:47,343 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:57:47,644 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:57:47,646 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:57:47,647 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:57:47,647 - app.core.middleware - INFO - Request completed
+2025-08-21 10:57:47,648 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/sessions "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:57:47,649 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:57:47,947 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:57:48,311 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:57:48,318 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:57:48,318 - app.core.middleware - INFO - Request completed
+2025-08-21 10:57:48,319 - httpx - INFO - HTTP Request: DELETE http://testserver/api/auth/sessions/all "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:57:48,322 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:57:48,698 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:57:48,700 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:57:48,702 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:57:48,703 - app.core.middleware - INFO - Request completed
+2025-08-21 10:57:48,704 - httpx - INFO - HTTP Request: DELETE http://testserver/api/auth/sessions/all "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:57:48,705 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:57:49,024 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:57:49,405 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:57:49,420 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:57:49,421 - app.core.middleware - INFO - Request completed
+2025-08-21 10:57:49,422 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:57:49,425 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:57:49,783 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:57:49,785 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:57:49,786 - app.core.middleware - INFO - Request completed
+2025-08-21 10:57:49,787 - httpx - INFO - HTTP Request: GET http://testserver/api/health "HTTP/1.1 200 OK"
+2025-08-21 10:57:49,789 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:57:50,059 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:57:50,061 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:57:50,064 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:57:50,064 - app.core.middleware - INFO - Request completed
+2025-08-21 10:57:50,065 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:57:50,066 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:09,135 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:09,136 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:58:09,651 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:10,105 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:10,107 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 200 OK"
+2025-08-21 10:58:10,110 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:10,551 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:10,554 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:10,558 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:10,559 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:10,560 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:10,562 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:10,970 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:11,339 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:11,690 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:11,691 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:11,692 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:11,694 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:12,128 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:12,539 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:12,541 - app.core.exception_handlers - WARNING - HTTP exception: 403
+2025-08-21 10:58:12,542 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:12,543 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 403 Forbidden"
+2025-08-21 10:58:12,545 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:12,934 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:12,937 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:12,940 - app.core.exception_handlers - WARNING - Validation error
+2025-08-21 10:58:12,941 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:12,941 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 422 Unprocessable Entity"
+2025-08-21 10:58:12,944 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:13,286 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:13,641 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:13,671 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:13,672 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/logout "HTTP/1.1 200 OK"
+2025-08-21 10:58:13,673 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:14,000 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:14,002 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:14,004 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:14,006 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/logout "HTTP/1.1 200 OK"
+2025-08-21 10:58:14,007 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:14,323 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:14,719 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:14,726 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:14,726 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:14,727 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:14,728 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:15,010 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:15,013 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:15,014 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:15,015 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:15,016 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:15,018 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:15,388 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:15,760 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:15,767 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:15,767 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:15,768 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/refresh "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:15,770 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:16,081 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:16,083 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:16,085 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:16,085 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:16,086 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/refresh "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:16,087 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:16,371 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:16,757 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:16,767 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:16,768 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:16,769 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:16,771 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:17,112 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:17,456 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:17,463 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:17,464 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:17,465 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:17,466 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:17,809 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:18,191 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:18,199 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:18,200 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:18,201 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:18,203 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:18,545 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:18,547 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:18,548 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:18,549 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:18,549 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:18,551 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:18,828 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:19,216 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:19,225 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:19,226 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:19,226 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/sessions "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:19,228 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:19,576 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:19,578 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:19,580 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:19,581 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:19,582 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/sessions "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:19,584 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:19,890 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:20,322 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:20,331 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:20,332 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:20,333 - httpx - INFO - HTTP Request: DELETE http://testserver/api/auth/sessions/all "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:20,335 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:20,652 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:20,653 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:20,655 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:20,655 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:20,656 - httpx - INFO - HTTP Request: DELETE http://testserver/api/auth/sessions/all "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:20,657 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:20,950 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:21,331 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:21,346 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:21,347 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:21,348 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:21,350 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:21,740 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:21,742 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:21,743 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:21,744 - httpx - INFO - HTTP Request: GET http://testserver/api/health "HTTP/1.1 200 OK"
+2025-08-21 10:58:21,746 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:22,054 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:22,056 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:22,060 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:22,060 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:22,061 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:22,063 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:29,476 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:29,478 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 10:58:29,930 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:30,317 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:30,318 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 200 OK"
+2025-08-21 10:58:30,320 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:30,563 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:30,566 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:30,570 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:30,570 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:30,571 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:30,572 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:30,851 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:31,273 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:31,631 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:31,632 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:31,635 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:31,636 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:31,948 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:32,313 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:32,317 - app.core.exception_handlers - WARNING - HTTP exception: 403
+2025-08-21 10:58:32,318 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:32,319 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 403 Forbidden"
+2025-08-21 10:58:32,321 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:32,661 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:32,664 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:32,668 - app.core.exception_handlers - WARNING - Validation error
+2025-08-21 10:58:32,668 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:32,670 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 422 Unprocessable Entity"
+2025-08-21 10:58:32,671 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:32,940 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:33,332 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:33,362 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:33,364 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/logout "HTTP/1.1 200 OK"
+2025-08-21 10:58:33,366 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:33,676 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:33,678 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:33,679 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:33,680 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/logout "HTTP/1.1 200 OK"
+2025-08-21 10:58:33,681 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:33,939 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:34,333 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:34,343 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:34,343 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:34,344 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:34,347 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:34,686 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:34,688 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:34,690 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:34,690 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:34,691 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:34,693 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:34,975 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:35,384 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:35,391 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:35,391 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:35,392 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/refresh "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:35,394 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:35,701 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:35,703 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:35,705 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:35,705 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:35,706 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/refresh "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:35,707 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:36,005 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:36,425 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:36,434 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:36,435 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:36,436 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:36,437 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:36,696 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:37,057 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:37,066 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:37,067 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:37,067 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:37,069 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:37,365 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:37,725 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:37,733 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:37,734 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:37,735 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:37,736 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:38,051 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:38,054 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:38,056 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:38,057 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:38,057 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/change-password "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:38,059 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:38,443 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:38,802 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:38,814 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:38,815 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:38,816 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/sessions "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:38,818 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:39,243 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:39,246 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:39,248 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:39,249 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:39,250 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/sessions "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:39,251 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:39,679 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:40,105 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:40,111 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:40,112 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:40,113 - httpx - INFO - HTTP Request: DELETE http://testserver/api/auth/sessions/all "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:40,114 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:40,388 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:40,390 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:40,391 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:40,392 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:40,392 - httpx - INFO - HTTP Request: DELETE http://testserver/api/auth/sessions/all "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:40,394 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:40,683 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:41,112 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:41,124 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:41,125 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:41,126 - httpx - INFO - HTTP Request: GET http://testserver/api/auth/me "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:41,127 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:41,536 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:41,539 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:41,540 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:41,541 - httpx - INFO - HTTP Request: GET http://testserver/api/health "HTTP/1.1 200 OK"
+2025-08-21 10:58:41,542 - app.main - INFO - ClientOps API shutting down
+2025-08-21 10:58:41,866 - app.main - INFO - ClientOps API starting up
+2025-08-21 10:58:41,868 - app.core.middleware - INFO - Incoming request
+2025-08-21 10:58:41,872 - app.core.exception_handlers - WARNING - HTTP exception: 401
+2025-08-21 10:58:41,873 - app.core.middleware - INFO - Request completed
+2025-08-21 10:58:41,874 - httpx - INFO - HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 401 Unauthorized"
+2025-08-21 10:58:41,875 - app.main - INFO - ClientOps API shutting down
