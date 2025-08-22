@@ -149,6 +149,27 @@ class Project(BaseModel):
         "ProjectHistory", back_populates="project", cascade="all, delete-orphan"
     )
 
+    # Advanced features relationships
+    milestones = relationship(
+        "ProjectMilestone", back_populates="project", cascade="all, delete-orphan"
+    )
+    
+    metrics = relationship(
+        "ProjectMetric", back_populates="project", cascade="all, delete-orphan"
+    )
+    
+    comments = relationship(
+        "ProjectComment", back_populates="project", cascade="all, delete-orphan"
+    )
+    
+    activities = relationship(
+        "ProjectActivity", back_populates="project", cascade="all, delete-orphan"
+    )
+    
+    documents = relationship(
+        "ProjectDocument", back_populates="project", cascade="all, delete-orphan"
+    )
+
     # Database constraints
     __table_args__ = (
         Index("idx_projects_client_id", "client_id"),
