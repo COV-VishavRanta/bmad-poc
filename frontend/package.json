@@ -47,6 +47,7 @@
     "@mui/system": "^7.3.1",
     "@mui/x-date-pickers": "^8.10.2",
     "@types/js-cookie": "^3.0.6",
+    "date-fns": "^4.1.0",
     "js-cookie": "^3.0.5",
     "next": "15.5.0",
     "react": "19.1.0",
