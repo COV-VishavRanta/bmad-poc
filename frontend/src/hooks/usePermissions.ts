@@ -32,6 +32,12 @@ export const usePermissions = () => {
     canEditSOWs: hasPermission('sows.edit'),
     canDeleteSOWs: hasPermission('sows.delete'),
     
+    // Group permissions
+    canViewGroups: hasPermission('groups.view'),
+    canCreateGroups: hasPermission('groups.create'),
+    canEditGroups: hasPermission('groups.edit'),
+    canDeleteGroups: hasPermission('groups.delete'),
+    
     // User permissions
     canViewUsers: hasPermission('users.view'),
     canCreateUsers: hasPermission('users.create'),
