@@ -4,7 +4,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api import health, auth, users, clients, projects, milestones, templates, collaboration
+from app.api import health, auth, users, clients, projects, groups, milestones, templates, collaboration
 from app.core import (
     CORSLoggingMiddleware,
     LoggingMiddleware,
@@ -70,6 +70,7 @@ app.include_router(auth.router, tags=["auth"])
 app.include_router(users.router, tags=["users"])
 app.include_router(clients.router, tags=["clients"])
 app.include_router(projects.router, tags=["projects"])
+app.include_router(groups.router, tags=["groups"])
 app.include_router(milestones.router, prefix="/api", tags=["milestones"])
 app.include_router(templates.router, prefix="/api", tags=["templates"])
 app.include_router(collaboration.router, prefix="/api", tags=["collaboration"])

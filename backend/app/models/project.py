@@ -45,6 +45,15 @@ class ProjectStatus(enum.Enum):
     CANCELLED = "cancelled"
 
 
+class GroupStatus(enum.Enum):
+    """Group status enumeration."""
+
+    ACTIVE = "active"
+    COMPLETED = "completed"
+    CANCELLED = "cancelled"
+    ARCHIVED = "archived"
+
+
 class ProjectHistoryAction(enum.Enum):
     """Project history action enumeration."""
 
@@ -52,6 +61,17 @@ class ProjectHistoryAction(enum.Enum):
     UPDATED = "updated"
     DELETED = "deleted"
     STATUS_CHANGED = "status_changed"
+
+
+class GroupHistoryAction(enum.Enum):
+    """Group history action enumeration."""
+
+    CREATED = "created"
+    UPDATED = "updated"
+    DELETED = "deleted"
+    STATUS_CHANGED = "status_changed"
+    PROJECTS_ADDED = "projects_added"
+    PROJECTS_REMOVED = "projects_removed"
 
 
 class Group(BaseModel):
@@ -67,10 +87,14 @@ class Group(BaseModel):
     # Basic group information
     name = Column(String(255), nullable=False)
     description = Column(Text, nullable=True)
+    status = Column(
+        Enum(GroupStatus), nullable=False, default=GroupStatus.ACTIVE, index=True
+    )
 
     # Foreign keys
     client_id = Column(Integer, ForeignKey("clients.id"), nullable=False, index=True)
-    sow_id = Column(Integer, ForeignKey("sows.id"), nullable=True)
+    sow_id = Column(Integer, ForeignKey("sows.id"), nullable=True, index=True)
+    created_by = Column(Integer, ForeignKey("users.id"), nullable=True)
 
     # Date range
     start_date = Column(Date, nullable=False)
@@ -80,10 +104,18 @@ class Group(BaseModel):
     client = relationship("Client", back_populates="groups")
     sow = relationship("SOW", back_populates="groups")
     projects = relationship("Project", back_populates="group")
+    created_by_user = relationship(
+        "User", back_populates="created_groups", foreign_keys=[created_by]
+    )
+    history = relationship(
+        "GroupHistory", back_populates="group", cascade="all, delete-orphan"
+    )
 
     # Database constraints
     __table_args__ = (
         Index("idx_groups_client_id", "client_id"),
+        Index("idx_groups_sow_id", "sow_id"),
+        Index("idx_groups_status", "status"),
         Index("idx_groups_dates", "start_date", "end_date"),
         Index("uk_groups_name_client", "name", "client_id", unique=True),
         CheckConstraint("start_date <= end_date", name="chk_group_date_order"),
@@ -91,10 +123,14 @@ class Group(BaseModel):
 
     def __repr__(self) -> str:
         """String representation of the Group."""
-        return f"<Group(id={self.id}, name='{self.name}', client_id={self.client_id})>"
+        return f"<Group(id={self.id}, name='{self.name}', client_id={self.client_id}, status='{self.status.value}')>"
 
     def is_active(self) -> bool:
-        """Check if group is currently active based on dates."""
+        """Check if group is currently active based on status."""
+        return self.status == GroupStatus.ACTIVE
+
+    def is_current(self) -> bool:
+        """Check if group is within its date range."""
         from datetime import date
 
         today = date.today()
@@ -103,6 +139,38 @@ class Group(BaseModel):
     def get_active_projects(self) -> List["Project"]:
         """Get all active projects in this group."""
         return [p for p in self.projects if p.status == ProjectStatus.ACTIVE]
+
+    def get_project_count(self) -> int:
+        """Get total number of projects in this group."""
+        return len(self.projects)
+
+    def calculate_total_fte(self) -> float:
+        """Calculate total FTE allocated across all projects in this group."""
+        total_fte = 0.0
+        for project in self.projects:
+            if hasattr(project, 'get_total_fte'):
+                total_fte += project.get_total_fte()
+        return round(total_fte, 2)
+
+    def validate_project_dates(self, project_start: Date, project_end: Date) -> bool:
+        """Validate that project dates fall within group date boundaries."""
+        return self.start_date <= project_start and project_end <= self.end_date
+
+    def activate(self) -> None:
+        """Activate the group."""
+        self.status = GroupStatus.ACTIVE
+
+    def complete(self) -> None:
+        """Mark group as completed."""
+        self.status = GroupStatus.COMPLETED
+
+    def cancel(self) -> None:
+        """Cancel the group."""
+        self.status = GroupStatus.CANCELLED
+
+    def archive(self) -> None:
+        """Archive the group."""
+        self.status = GroupStatus.ARCHIVED
 
 
 class Project(BaseModel):
@@ -218,6 +286,45 @@ class Project(BaseModel):
     def cancel(self) -> None:
         """Cancel the project."""
         self.status = ProjectStatus.CANCELLED
+
+
+class GroupHistory(BaseModel):
+    """
+    Group history model for audit trail.
+
+    Tracks all changes made to group records for compliance and auditing.
+    """
+
+    __tablename__ = "group_history"
+
+    # Foreign keys
+    group_id = Column(Integer, ForeignKey("groups.id"), nullable=False, index=True)
+    changed_by = Column(Integer, ForeignKey("users.id"), nullable=True)
+
+    # Change tracking
+    action = Column(Enum(GroupHistoryAction), nullable=False, index=True)
+    changed_fields = Column(JSON, nullable=True)
+    old_values = Column(JSON, nullable=True)
+    new_values = Column(JSON, nullable=True)
+    change_metadata = Column(JSON, nullable=True)  # Additional context like added/removed project IDs
+    changed_at = Column(
+        DateTime, nullable=False, default=BaseModel.created_at.default, index=True
+    )
+
+    # Relationships
+    group = relationship("Group", back_populates="history")
+    changed_by_user = relationship("User")
+
+    # Database indexes
+    __table_args__ = (
+        Index("idx_group_history_group_id", "group_id"),
+        Index("idx_group_history_action", "action"),
+        Index("idx_group_history_changed_at", "changed_at"),
+    )
+
+    def __repr__(self) -> str:
+        """String representation of the GroupHistory."""
+        return f"<GroupHistory(id={self.id}, group_id={self.group_id}, action='{self.action.value}')>"
 
 
 class ProjectHistory(BaseModel):

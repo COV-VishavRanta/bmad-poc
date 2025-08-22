@@ -83,6 +83,10 @@ class User(BaseModel):
         "SOW", back_populates="created_by_user", foreign_keys="SOW.created_by"
     )
 
+    created_groups = relationship(
+        "Group", back_populates="created_by_user", foreign_keys="Group.created_by"
+    )
+
     assignments = relationship(
         "Assignment", back_populates="user", foreign_keys="Assignment.user_id"
     )

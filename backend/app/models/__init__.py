@@ -42,6 +42,9 @@ from app.models.milestone import (
 )
 from app.models.project import (
     Group,
+    GroupHistory,
+    GroupHistoryAction,
+    GroupStatus,
     Project,
     ProjectHistory,
     ProjectHistoryAction,
@@ -75,10 +78,13 @@ __all__ = [
     # Project models
     "Project",
     "Group",
+    "GroupHistory",
     "ProjectHistory",
     "ProjectType",
     "ProjectStatus",
+    "GroupStatus",
     "ProjectHistoryAction",
+    "GroupHistoryAction",
     # SOW models
     "SOW",
     "SOWRole",
