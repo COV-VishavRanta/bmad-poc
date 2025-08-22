@@ -93,6 +93,25 @@ class User(BaseModel):
         foreign_keys="Assignment.created_by",
     )
 
+    # Advanced features relationships
+    assigned_milestones = relationship(
+        "ProjectMilestone",
+        secondary="milestone_assignees",
+        back_populates="assignees"
+    )
+
+    project_comments = relationship(
+        "ProjectComment", back_populates="user", cascade="all, delete-orphan"
+    )
+
+    project_activities = relationship(
+        "ProjectActivity", back_populates="user", cascade="all, delete-orphan"
+    )
+
+    uploaded_documents = relationship(
+        "ProjectDocument", back_populates="uploaded_by_user", cascade="all, delete-orphan"
+    )
+
     # Database indexes
     __table_args__ = (
         Index("idx_users_email", "email"),

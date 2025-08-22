@@ -22,6 +22,24 @@ from app.models.client import (
     ClientStatus,
     RelationType,
 )
+from app.models.collaboration import (
+    ActivityType,
+    DocumentFolder,
+    NotificationStatus,
+    ProjectActivity,
+    ProjectComment,
+    ProjectDocument,
+    ProjectNotification,
+)
+from app.models.milestone import (
+    DependencyType,
+    MilestoneAssignee,
+    MilestoneDependency,
+    MilestoneStatus,
+    ProjectMetric,
+    ProjectMilestone,
+    ProjectTemplate,
+)
 from app.models.project import (
     Group,
     Project,
@@ -72,4 +90,20 @@ __all__ = [
     "AssignmentHistory",
     "AssignmentStatus",
     "AssignmentHistoryAction",
+    # Milestone models
+    "ProjectMilestone",
+    "MilestoneDependency",
+    "MilestoneAssignee",
+    "ProjectTemplate",
+    "ProjectMetric",
+    "MilestoneStatus",
+    "DependencyType",
+    # Collaboration models
+    "ProjectComment",
+    "ProjectActivity",
+    "ProjectDocument",
+    "DocumentFolder",
+    "ProjectNotification",
+    "ActivityType",
+    "NotificationStatus",
 ]
