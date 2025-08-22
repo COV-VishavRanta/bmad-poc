@@ -18,6 +18,7 @@ import {
   Stack,
   Typography,
 } from '@mui/material';
+import Link from 'next/link';
 
 interface StatCardProps {
   title: string;
@@ -190,6 +191,7 @@ export default function DashboardPage() {
           </Typography>
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
             <RoleGuard allowedRoles={['HR']}>
+              <Link href='/users'>
               <Card variant="outlined" sx={{ cursor: 'pointer', '&:hover': { bgcolor: 'action.hover' } }}>
                 <CardContent sx={{ textAlign: 'center' }}>
                   <People sx={{ fontSize: 40, mb: 1, color: 'primary.main' }} />
@@ -198,6 +200,7 @@ export default function DashboardPage() {
                   </Typography>
                 </CardContent>
               </Card>
+              </Link>
             </RoleGuard>
 
             <RoleGuard allowedRoles={['HR', 'PC']}>

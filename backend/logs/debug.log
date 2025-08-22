@@ -30761,3 +30761,20 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2025-08-21 20:54:40,395 - app.core.exception_handlers - ERROR - Unhandled exception
 2025-08-21 20:55:11,404 - app.core.middleware - INFO - Incoming request
 2025-08-21 20:55:11,633 - app.core.middleware - INFO - Request completed
+2025-08-21 22:22:57,155 - app.main - INFO - ClientOps API starting up
+2025-08-21 22:23:01,973 - app.core.middleware - INFO - Incoming request
+2025-08-21 22:23:02,190 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\vranta\AppData\Local\Programs\Python\Python313\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-08-21 22:23:02,818 - app.core.middleware - INFO - Request completed
+2025-08-21 22:25:12,806 - app.core.middleware - INFO - Incoming request
+2025-08-21 22:25:12,898 - app.core.middleware - INFO - Request completed
+2025-08-21 22:25:12,904 - app.core.middleware - INFO - Incoming request
+2025-08-21 22:25:12,939 - app.core.middleware - INFO - Request completed
+2025-08-21 22:25:12,945 - app.core.middleware - INFO - Incoming request
+2025-08-21 22:25:12,981 - app.core.middleware - INFO - Request completed
+2025-08-21 22:25:25,583 - app.core.middleware - INFO - Incoming request
+2025-08-21 22:25:25,641 - app.core.middleware - INFO - Request completed
