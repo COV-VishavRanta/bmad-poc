@@ -82,3 +82,55 @@ export interface ClientSearchResponse extends ClientListResponse {
   searchTerm?: string;
   searchTime?: number; // Time taken for search in milliseconds
 }
+
+// Contact management types
+export interface ClientContact {
+  id: number;
+  clientId: number;
+  name: string;
+  email?: string;
+  phone?: string;
+  role?: string;
+  department?: string;
+  isPrimary: boolean;
+  status: 'active' | 'inactive';
+  createdAt: string;
+  updatedAt: string;
+  notes?: string;
+}
+
+export interface CreateContactData {
+  name: string;
+  email?: string;
+  phone?: string;
+  role?: string;
+  department?: string;
+  isPrimary?: boolean;
+  notes?: string;
+}
+
+export interface UpdateContactData extends Partial<CreateContactData> {
+  status?: 'active' | 'inactive';
+}
+
+export interface ClientWithContacts extends Client {
+  contacts: ClientContact[];
+}
+
+// Client activity types
+export interface ClientActivity {
+  id: number;
+  type: 'client_updated' | 'contact_added' | 'contact_updated' | 'contact_deleted' | 'project_created' | 'status_changed';
+  description: string;
+  timestamp: string;
+  userId: number;
+  userName: string;
+  details: Record<string, unknown>;
+  impact: 'low' | 'medium' | 'high';
+}
+
+export interface ClientWithDetails extends ClientWithContacts {
+  activities: ClientActivity[];
+  projectCount: number;
+  lastActivity: string;
+}
