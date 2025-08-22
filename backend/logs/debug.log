@@ -30778,3 +30778,5 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2025-08-21 22:25:12,981 - app.core.middleware - INFO - Request completed
 2025-08-21 22:25:25,583 - app.core.middleware - INFO - Incoming request
 2025-08-21 22:25:25,641 - app.core.middleware - INFO - Request completed
+2025-08-22 12:46:01,711 - app.main - INFO - ClientOps API starting up
+2025-08-22 12:48:35,505 - app.main - INFO - ClientOps API shutting down
