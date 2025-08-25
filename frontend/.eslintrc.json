@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "next/core-web-vitals"
+  ],
+  "rules": {
+    "prefer-const": "error",
+    "no-var": "error",
+    "react/jsx-pascal-case": "error",
+    "react/jsx-no-duplicate-props": "error"
+  }
+}
