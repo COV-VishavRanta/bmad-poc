@@ -14,6 +14,7 @@ from dotenv import load_dotenv
 
 from app.schemas.response import HealthCheckResponse, RootResponse
 from app.api.auth import router as auth_router
+from app.api.clients import router as clients_router
 from app.database import create_tables
 
 # Load environment variables
@@ -36,6 +37,7 @@ app.add_middleware(
 
 # Include routers
 app.include_router(auth_router)
+app.include_router(clients_router, prefix="/api")
 
 # Create database tables on startup
 @app.on_event("startup")
