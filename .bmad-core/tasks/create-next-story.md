@@ -44,7 +44,7 @@ To identify the next logical story based on project progress and epic definition
 
 #### 3.2 Read Architecture Documents Based on Story Type
 
-**For ALL Stories:** tech-stack.md, unified-project-structure.md, coding-standards.md, testing-strategy.md
+**For ALL Stories:** tech-stack.md, unified-project-structure.md, coding-standards.md
 
 **For Backend/API Stories, additionally:** data-models.md, database-schema.md, backend-architecture.md, rest-api-spec.md, external-apis.md
 
@@ -62,7 +62,6 @@ Extract:
 - API endpoints the story must implement or consume
 - Component specifications for UI elements in the story
 - File paths and naming conventions for new code
-- Testing requirements specific to the story's features
 - Security or performance considerations affecting the story
 
 ALWAYS cite source documents: `[Source: architecture/{filename}.md#{section}]`
@@ -85,14 +84,12 @@ ALWAYS cite source documents: `[Source: architecture/{filename}.md#{section}]`
     - **API Specifications**: Endpoint details, request/response formats, auth requirements [with source references]
     - **Component Specifications**: UI component details, props, state management [with source references]
     - **File Locations**: Exact paths where new code should be created based on project structure
-    - **Testing Requirements**: Specific test cases or strategies from testing-strategy.md
     - **Technical Constraints**: Version requirements, performance considerations, security rules
   - Every technical detail MUST include its source reference: `[Source: architecture/{filename}.md#{section}]`
   - If information for a category is not found in the architecture docs, explicitly state: "No specific guidance found in architecture docs"
 - **`Tasks / Subtasks` section:**
   - Generate detailed, sequential list of technical tasks based ONLY on: Epic Requirements, Story AC, Reviewed Architecture Information
   - Each task must reference relevant architecture documentation
-  - Include unit testing as explicit subtasks based on the Testing Strategy
   - Link tasks to ACs where applicable (e.g., `Task 1 (AC: 1, 3)`)
 - Add notes on project structure alignment or discrepancies found in Step 4
 
