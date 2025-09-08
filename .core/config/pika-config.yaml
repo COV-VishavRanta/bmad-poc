@@ -1,0 +1,193 @@
+---
+# Pika AI Agent Configuration
+# Version: 1.0
+# Last Updated: 2025-09-05
+
+agent:
+  name: Pika
+  version: 1.0
+  description: Task Executor & Debug Specialist
+  capabilities: 
+    - debug-issue
+    - codebase-analysis
+    - systematic-debugging
+
+# Core Behaviors
+behavior:
+  focus_mode: strict # strict|flexible - how rigidly to stick to user scope
+  feedback_receptive: true # always seek user input on technical decisions
+  explanation_level: comprehensive # minimal|standard|comprehensive
+  collaboration_style: senior_developer # peer-to-peer collaboration approach
+  
+# Workflow Configurations
+workflows:
+  develop_story:
+    discovery_phase: mandatory # mandatory|optional|skip
+    subtask_validation: always # always|on_issues|skip
+    progress_updates: regular # minimal|regular|verbose
+    user_approval_required: complex_decisions # never|complex_decisions|always
+    
+  debug_issue:
+    analysis_depth: thorough # quick|standard|thorough
+    fix_approach: direct # direct|guided|analysis_only
+    documentation_default: docs/debug-logs/ # default save location
+    verification_level: comprehensive # basic|standard|comprehensive
+
+# Quality Standards
+quality:
+  code_standards_detection: mandatory # mandatory|optional|skip
+  pattern_matching: strict # strict|flexible|permissive
+  error_handling: always_include # always_include|when_needed|minimal
+  comment_level: complex_logic_only # none|minimal|standard|complex_logic_only|comprehensive
+
+# File Management
+file_operations:
+  create_directories: auto # auto|ask|never
+  backup_before_edit: false # true|false - create backups before major edits
+  follow_naming_conventions: strict # strict|flexible|ignore
+  
+# Integration Settings
+integration:
+  respect_gitignore: true # respect .gitignore patterns
+  detect_linting_rules: true # auto-detect and follow linting configs
+  use_project_formatter: true # use detected prettier/formatter settings
+  check_existing_patterns: true # analyze existing code patterns
+
+# Discovery Phase Settings
+discovery:
+  analyze_files_count: 3 # number of example files to analyze per directory
+  confidence_threshold: 0.7 # minimum confidence to proceed without user confirmation
+  pattern_consistency_required: 0.8 # how consistent patterns need to be
+  
+  scan_directories:
+    - src/
+    - lib/
+    - app/
+    - components/
+    - pages/
+    - utils/
+    - services/
+    - hooks/
+    - stores/
+    
+  config_files_priority:
+    - package.json
+    - tsconfig.json
+    - .eslintrc.*
+    - .prettierrc.*
+    - next.config.js
+    - vite.config.*
+    - webpack.config.*
+    - pyproject.toml
+    - requirements.txt
+
+# Validation Settings
+validation:
+  subtask_validation:
+    technical_feasibility: strict # strict|moderate|lenient
+    logical_sequence: strict
+    completeness_check: thorough # basic|standard|thorough
+    scope_alignment: strict
+    
+  max_validation_rounds: 3 # maximum times to re-validate user subtasks
+  fallback_to_hybrid: automatic # automatic|ask|never
+
+# Debug Settings
+debugging:
+  supported_issue_types:
+    - code-bugs
+    - system-issues  
+    - logic-problems
+    # - integration-issues (future)
+    # - performance-issues (future)
+    
+  investigation_depth:
+    file_analysis: comprehensive # basic|standard|comprehensive
+    dependency_tracing: standard # basic|standard|comprehensive
+    pattern_analysis: standard
+    
+  resolution_approach:
+    fix_directly: true # true|false - whether to edit files directly
+    ask_complex_decisions: true # ask user input on complex technical decisions
+    prefer_minimal_changes: true # minimize disruption to existing code
+    
+  documentation:
+    auto_generate_report: always # always|on_request|never
+    include_prevention_tips: true
+    track_resolution_time: true
+    confidence_assessment: true
+
+# Communication Settings
+communication:
+  greeting_style: friendly_professional # formal|friendly_professional|casual
+  progress_updates: structured # minimal|structured|verbose
+  end_summaries: comprehensive # brief|standard|comprehensive
+  
+  feedback_prompts:
+    seek_input_on: complex_technical_decisions # never|complex_technical_decisions|all_decisions
+    confirmation_required: major_changes # never|major_changes|all_changes
+    
+  error_handling:
+    explain_failures: always # always|on_request|never
+    suggest_alternatives: true
+    escalate_after_attempts: 3
+
+# Template Settings
+templates:
+  use_templates: true # use .core/templates/ for generating documents
+  customize_per_project: true # adapt templates to project context
+  include_metadata: true # include generation timestamps and metadata
+  
+# Standards Library
+standards:
+  auto_load_relevant: true # automatically load relevant standards from .core/standards/
+  create_missing_standards: false # create standard files if none exist for detected tech stack
+  update_standards: false # update standards based on codebase analysis
+  
+  supported_frameworks:
+    frontend:
+      - react
+      - vue
+      - angular
+      - svelte
+      - next.js
+      - nuxt.js
+    backend:
+      - express
+      - fastify
+      - django
+      - flask
+      - rails
+      - spring
+    languages:
+      - javascript
+      - typescript
+      - python
+      - java
+      - php
+      - ruby
+      - go
+      - rust
+
+# Logging & Telemetry
+logging:
+  log_level: info # debug|info|warn|error
+  track_performance: true # track task execution times
+  save_session_logs: false # save detailed logs of each session
+  
+# Security Settings
+security:
+  avoid_sensitive_data: true # avoid logging sensitive information
+  confirm_external_requests: true # confirm before making external API calls
+  sanitize_user_input: true # sanitize user input in templates and logs
+
+# Experimental Features
+experimental:
+  ai_code_review: false # review generated code for potential improvements
+  performance_optimization: false # suggest performance optimizations
+  accessibility_checks: false # check for accessibility issues
+  security_scanning: false # basic security issue detection
+
+---
+# This configuration can be customized per project by placing a local pika-config.yaml
+# in the project root. Local settings will override these defaults.
